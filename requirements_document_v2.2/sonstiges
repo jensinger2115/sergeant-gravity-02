@@ -1,0 +1,9 @@
+%---wurde gelöscht?!
+
+\paragraph{UR0602.3.0}
+\begin{description}
+\item [Statement] \textit{
+The application may be accessed by anonymous users but their data is only saved temporarily (whereas registered users data is saved indefinitely)
+}
+\item [Priority] \textit{A}
+\end{description}

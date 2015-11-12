@@ -1,0 +1,337 @@
+\section{The application uses an RDF-Database to store all data}
+
+\paragraph{FR001}
+\begin{description}
+\item [Statement] \textit{
+ Data that is stored:  
+	\\-All uploaded Files (test and trainings data (.\gls{arff}, .\gls{csv}))
+	\\-All options chosen by the user (algorithm, input parameters, output format)
+	\\-Output of the algorithm (\gls{Model})
+	\\-Package gls{ID}
+	\\-Starting time of the algorithm
+	\\-Ending time of the algorithm
+	\\-Output from running test on the model
+	\\-User Id of creator
+	\\-Users with reading rights
+	\\-Users with writing rights
+	\\-License
+	\\-Description
+}
+\item [Priority] \textit{A}
+\item[User Requirement] \textit{UR0105.0}
+\end{description}
+
+\paragraph{FR002}
+\begin{description}
+\item [Statement] \textit{
+ All this data makes up a data package more specifically a data package may consists of:  
+	\\-Package id (but only needs a package id to exist)
+	\\-An unlimited number of test files
+	\\-One trainings data file
+	\\-The chosen algorithm id
+	\\-The chosen parameters
+	\\-The output (model)
+	\\-The starting time of the algorithm
+	\\-The ending time of the algorithm
+	\\-The user Id of the creator of this package
+	\\-Unlimited number of user ids with reading rights
+	\\-Unlimited number of user ids with writing rights
+	\\-The license
+	\\-The Description
+}
+\item [Priority] \textit{A}
+\item[User Requirement] \textit{UR0105.0}
+\end{description}
+
+\paragraph{FR002}
+\begin{description}
+\item [Statement] \textit{
+ All this data makes up a data package more specifically a data package may consists of:  
+	\\-Package id (but only needs a package id to exist)
+	\\-An unlimited number of test files
+	\\-One trainings data file
+	\\-The chosen algorithm id
+	\\-The chosen parameters
+	\\-The output (model)
+	\\-The starting time of the algorithm
+	\\-The ending time of the algorithm
+	\\-The user Id of the creator of this package
+	\\-Unlimited number of user ids with reading rights
+	\\-Unlimited number of user ids with writing rights
+	\\-The license
+	\\-The Description
+}
+\item [Priority] \textit{A}
+\end{description}
+
+\paragraph{FR003}
+\begin{description}
+\item [Statement] \textit{
+Database may be accessed via \gls{HTTPS}  
+	\\Users can only access data to which they have reading rights
+	\\Users may only change data to which they have writing rights
+}
+\item [Priority] \textit{A}
+\item[User Requirement] \textit{UR0202.0}
+\end{description}
+
+\paragraph{FR004}
+\begin{description}
+\item [Statement] \textit{
+All data is saved and updated into the database as soon as it appears/changes
+}
+\item [Priority] \textit{A}
+\end{description}
+
+\section{The application has a user administration. There are three types of users:}
+
+\subsection{Registered Users:}
+
+\begin{description}
+\item[User Requirement] \textit{UR0601.0}
+\end{description}
+
+\paragraph{FR005}
+\begin{description}
+\item [Statement] \textit{
+People can registered themselves to the application. Therefore they need three things: 
+	\\-Username: Usernames can only contain letters (a-z), numbers (0-9), dashes (\-), underscores (\_), apostrophes (\'), and periods (\.) (and must be unique?).
+	\\-Password: Passwords can contain any combination of ASCII characters and must contain a minimum of 8 characters
+	\\-Email-address: must be valid and unique.
+}
+\item [Priority] \textit{A}
+\end{description}
+
+\paragraph{FR006}
+\begin{description}
+  \item [Statement]
+    \textit{
+    A unique user id is assigned to each new registered user.
+}
+  \item [Prioriy] \textit{A}
+\end{description}
+
+\paragraph{FR007}
+\begin{description}
+  \item [Statement]
+    \textit{
+    A unique user id is assigned to each new registered user.
+}
+  \item [Prioriy] \textit{A}
+\end{description}
+
+\paragraph{FR008}
+\begin{description}
+  \item [Statement]
+    \textit{
+After registering, users can login by using their email-address and password.
+}
+  \item [Prioriy] \textit{A}
+\end{description}
+
+\paragraph{FR009}
+\begin{description}
+  \item [Statement]
+    \textit{
+User that are logged in can do the following things:
+\\1.) Profile settings:
+\\o   Change their password (requires confirmation?)
+\\o   Change their email-address (requires confirmation?)
+\\
+\\2.) Manage data: Overview of all data packages they have access to. List of model Ids and their corresponding description.
+\\o   Search bar, which finds a package via package Id
+\\o   Selecting a package will reveal all its data
+\\§  The user can change permissions (See UR0601.2)
+\\§  Run test on the model by using existing test data or uploading new data. (See UR0115.0)
+\\§§ Format of test data: .arff, .csv
+\\§  Change the description (needs writing rights)
+\\§  Delete uploaded data or whole package (must be creator)
+\\§ Download \gls{Model}/\gls{test data} (See UR0103.0)
+\\
+\\3.) Create new model: 
+\\o   Upload data (.arff, .csv format)  (See UR0107.0)
+\\o   Choose split factor of data into training and test data (in \%)
+\\o   Optionally upload test data (.arff, .csv format)
+\\o   Choose an algorithm (See UR0104.0)
+\\o   Set algorithms parameters (See UR0104.0)
+\\o   Choose an output mode (See UR0102.0)
+\\o   Run the algorithm (User can cancel the algorithm at any time) (See UR0504.0)
+\\o   Application returns created model and results of test
+\\o   Optionally set description
+\\o   Optionally change permissions
+\\
+\\4.) Upload new algorithms: (See UR0501.0)
+\\o   Must be a .jar file which implements the algorithms interface
+\\o   Uploaded algorithms must be approved by an administrator before the may be used. (See UR0501.1)
+\\o Registered users only
+\\
+\\5.) Upload existing model: (See UR0115.0)
+\\o   Must be a serialized java object (See UR0107.0) 
+}
+  \item [Prioriy] \textit{A}
+\end{description}
+
+\paragraph{FR010}
+\begin{description}
+  \item [Statement]
+    \textit{
+Registered users have full access to the application. They may upload any number of files and run any number of algorithms.
+}
+  \item [Prioriy] \textit{A}
+  \item[User Requirement] \textit{UR0503.0}
+\end{description}
+
+\paragraph{FR011}
+\begin{description}
+  \item [Statement]
+    \textit{
+All data packages of registered users are set to private by default, meaning only the creator has reading and writing rights.
+}
+  \item [Prioriy] \textit{A}
+  \item[User Requirement] \textit{UR0600.0}
+\end{description}
+
+\paragraph{FR012}
+\begin{description}
+  \item [Statement]
+    \textit{
+Registered users can change writing and reading permissions on each data package they created. 
+}
+  \item [Prioriy] \textit{A}
+  \item[User Requirement] \textit{UR0601.2}
+\end{description}
+
+\paragraph{FR013}
+\begin{description}
+  \item [Statement]
+    \textit{
+Righting rights to not entail change permissions of data packages. Only the creator may change permissions to his or her data packages.
+}
+  \item [Priority] \textit{A}
+  \item[User Requirement] \textit{UR0600.0}
+\end{description}
+
+%----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+\subsection{Anonymous Users:}
+
+\begin{description}
+\item[User Requirement] \textit{UR0900.0}
+\end{description}
+
+
+\paragraph{FR014}
+\begin{description}
+  \item [Statement]
+    \textit{
+People may also use the application without registering. The anonymous user is essentially treated as a registered user, who automatically gives everyone reading and writing rights to his or her data packages.
+}
+  \item [Priority] \textit{A}
+  \item[User Requirement] \textit{UR0602.1}
+\end{description}
+
+\paragraph{FR015}
+\begin{description}
+  \item [Statement]
+    \textit{
+The anonymous user may also have extra constraints given by the administration
+}
+  \item [Prioriy] \textit{A}
+  \item[User Requirement] \textit{UR0602.2}
+\end{description}
+
+%------------------------------------------------
+%-------------------------------------------------------
+\subsection{Administrator}
+
+\begin{description}
+\item[User Requirement] \textit{UR0603.0}
+\end{description}
+
+
+\paragraph{FR016}
+\begin{description}
+  \item [Statement]
+    \textit{
+Administrators also have to be registered to the application and can then login with their email-address and password.
+}
+  \item [Prioriy] \textit{A}
+\end{description}
+
+\paragraph{FR017}
+\begin{description}
+  \item [Statement]
+    \textit{
+Administrators automatically have reading and writing rights to all data packages.
+}
+  \item [Prioriy] \textit{A}
+\end{description}
+
+\paragraph{FR018}
+\begin{description}
+  \item [Statement]
+    \textit{
+Administrators can do everything a registered user can.
+}
+  \item [Prioriy] \textit{A}
+\end{description}
+
+\paragraph{FR019}
+\begin{description}
+  \item [Statement]
+    \textit{
+Additionally administrators have an extra view with the following options:
+\\1.) Administrators can set constraints to the anonymous users:
+\\o   Time constraints: Administrators can set (See UR0602.2.1)
+\\§  Time limits (in minutes) for algorithms (individually ?) (See UR0602.2.1.2)
+\\§  An expiration date for data packages (in days), after which data packages are deleted from the database (See UR0602.2.1.1)
+\\o   Space constraints: Administrators can set a maximum upload file size (in GB) (See UR0602.2.2)
+\\
+\\2.) Administrators can  set the maximum number of simultaneously running algorithms for the whole application AND every single user (See UR0603.2 /UR0603.3)
+\\
+\\3.) Administrators can ban user from the application. Banned users are deleted from the system. (This entails deleting all data packages created by the banned user) (See UR0603.1)
+\\
+\\4.) Administrators have an overview over all work request and can cancel any number of them and change the order of the request in the workflow-queue
+\\
+\\5.)Administrators have a view over all request for new algorithms. They may download them to check the code and then approve them.
+\\o   Approved algorithms are considered active and can be run by all users
+\\o   Administrators can also deactivate algorithms
+}
+  \item [Prioriy] \textit{A}
+\end{description}
+
+%---------------------------------------------------
+%---------------------------------------------------
+\section{Server/Algorithms}
+
+
+\paragraph{FR020}
+\begin{description}
+  \item [Statement]
+    \textit{
+It is possible to run multiple algorithms at the same time
+}
+  \item [Prioriy] \textit{A}
+  \item[User Requirement] \textit{UR0507.0}
+\end{description}
+
+\paragraph{FR021}
+\begin{description}
+  \item [Statement]
+    \textit{
+If the number of simultaneously running algorithms reaches the limit given by the (See UR0507.0) administration any new request are entered into a workflow-queue.
+\\§  Registered users are prioritized over anonymous users in the queue. (See UR0601.4)
+}
+  \item [Prioriy] \textit{A}
+   \item[User Requirement] \textit{UR0507.0, UR0601.4}
+\end{description}
+
+\paragraph{FR022}
+\begin{description}
+  \item [Statement]
+    \textit{
+Based on the users trainings data input the choice of algorithms is limited. (e.g.: if input data  contains floating point numbers, then only algorithms that can handle those numbers will be available)
+}
+  \item [Prioriy] \textit{A}
+  \item[User Requirement] \textit{UR0104.0}
+\end{description}

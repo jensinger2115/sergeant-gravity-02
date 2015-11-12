@@ -1,0 +1,161 @@
+\contentsline {chapter}{Glossary}{3}{section*.1}
+\contentsline {part}{I\hspace {1em}Preface}{9}{part.1}
+\contentsline {section}{\numberline {1.1}Readership}{11}{section.1.1}
+\contentsline {section}{\numberline {1.2}Document Version}{11}{section.1.2}
+\contentsline {part}{II\hspace {1em}Introduction}{13}{part.2}
+\contentsline {section}{\numberline {2.1}Purpose of the system}{15}{section.2.1}
+\contentsline {section}{\numberline {2.2}Description of the Program}{15}{section.2.2}
+\contentsline {part}{III\hspace {1em}User Requirements}{17}{part.3}
+\contentsline {section}{\numberline {3.1}UR0100}{19}{section.3.1}
+\contentsline {paragraph}{UR0100.0}{19}{section*.4}
+\contentsline {paragraph}{UR0101.0}{19}{section*.5}
+\contentsline {paragraph}{UR0102.0}{19}{section*.6}
+\contentsline {paragraph}{UR0103.0}{19}{section*.7}
+\contentsline {paragraph}{UR0104.0}{19}{section*.8}
+\contentsline {paragraph}{UR0105.0}{19}{section*.9}
+\contentsline {paragraph}{UR0106.0}{19}{section*.10}
+\contentsline {paragraph}{UR0107.0}{20}{section*.11}
+\contentsline {paragraph}{UR0108.0}{20}{section*.12}
+\contentsline {paragraph}{UR0109.0}{20}{section*.13}
+\contentsline {paragraph}{UR0110.0}{20}{section*.14}
+\contentsline {paragraph}{UR0111.0}{20}{section*.15}
+\contentsline {paragraph}{UR0112.0}{20}{section*.16}
+\contentsline {paragraph}{UR0113.0}{20}{section*.17}
+\contentsline {paragraph}{UR0114.0}{20}{section*.18}
+\contentsline {paragraph}{UR0115.0}{21}{section*.19}
+\contentsline {paragraph}{UR0116.0}{21}{section*.20}
+\contentsline {section}{\numberline {3.2}UR0200}{21}{section.3.2}
+\contentsline {paragraph}{UR0200.0}{21}{section*.21}
+\contentsline {paragraph}{UR0201.0}{21}{section*.22}
+\contentsline {paragraph}{UR0202.0}{21}{section*.23}
+\contentsline {paragraph}{UR0203.0}{21}{section*.24}
+\contentsline {section}{\numberline {3.3}UR0300}{21}{section.3.3}
+\contentsline {paragraph}{UR0300.0}{21}{section*.25}
+\contentsline {section}{\numberline {3.4}UR0400}{22}{section.3.4}
+\contentsline {paragraph}{UR0400.0}{22}{section*.26}
+\contentsline {paragraph}{UR0401.0}{22}{section*.27}
+\contentsline {section}{\numberline {3.5}UR0500 - Algorithms}{22}{section.3.5}
+\contentsline {paragraph}{UR0501.0}{22}{section*.28}
+\contentsline {paragraph}{UR0501.1}{22}{section*.29}
+\contentsline {paragraph}{UR0502.0}{22}{section*.30}
+\contentsline {paragraph}{UR0503.0}{22}{section*.31}
+\contentsline {paragraph}{UR0504.0}{22}{section*.32}
+\contentsline {paragraph}{UR0505.0}{23}{section*.33}
+\contentsline {paragraph}{UR0506.0}{23}{section*.34}
+\contentsline {paragraph}{UR0507.0}{23}{section*.35}
+\contentsline {section}{\numberline {3.6}UR0600}{23}{section.3.6}
+\contentsline {paragraph}{UR0600.0}{23}{section*.36}
+\contentsline {subsection}{\numberline {3.6.1}UR0601.0 Registered - User view}{23}{subsection.3.6.1}
+\contentsline {paragraph}{UR0601.1}{23}{section*.37}
+\contentsline {paragraph}{UR0601.2}{23}{section*.38}
+\contentsline {paragraph}{UR0601.3}{23}{section*.39}
+\contentsline {paragraph}{UR0601.4}{24}{section*.40}
+\contentsline {subsection}{\numberline {3.6.2}UR0602.0 Anonymous - User view}{24}{subsection.3.6.2}
+\contentsline {paragraph}{UR0602.1}{24}{section*.41}
+\contentsline {paragraph}{UR0602.2}{24}{section*.42}
+\contentsline {paragraph}{UR0602.2.1 Time-constraints:}{24}{section*.43}
+\contentsline {paragraph}{UR0602.2.1.1}{24}{section*.44}
+\contentsline {paragraph}{UR0602.2.1.2}{24}{section*.45}
+\contentsline {paragraph}{UR0602.2.2 Space-constraints:}{24}{section*.46}
+\contentsline {paragraph}{UR0602.2.2.1}{24}{section*.47}
+\contentsline {subsection}{\numberline {3.6.3}UR0603.0 Administrator view}{24}{subsection.3.6.3}
+\contentsline {paragraph}{UR0603.1}{24}{section*.48}
+\contentsline {paragraph}{UR0603.2}{25}{section*.49}
+\contentsline {paragraph}{UR0603.3}{25}{section*.50}
+\contentsline {section}{\numberline {3.7}UR0700}{25}{section.3.7}
+\contentsline {paragraph}{UR0700}{25}{section*.51}
+\contentsline {section}{\numberline {3.8}UR0800}{25}{section.3.8}
+\contentsline {paragraph}{UR0800}{25}{section*.52}
+\contentsline {section}{\numberline {3.9}UR0900}{25}{section.3.9}
+\contentsline {paragraph}{UR0900}{25}{section*.53}
+\contentsline {section}{\numberline {3.10}UR1000}{25}{section.3.10}
+\contentsline {paragraph}{UR1000}{25}{section*.54}
+\contentsline {part}{IV\hspace {1em}System Requirements}{27}{part.4}
+\contentsline {chapter}{Non-Functional Requirements}{29}{chapter.4}
+\contentsline {section}{\numberline {4.1}Product Requirements}{29}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Usability Requirements}{29}{subsection.4.1.1}
+\contentsline {paragraph}{NFR001.0}{29}{section*.56}
+\contentsline {paragraph}{NFR002.0}{29}{section*.57}
+\contentsline {paragraph}{NFR003.0}{29}{section*.58}
+\contentsline {paragraph}{NFR004.0}{30}{section*.59}
+\contentsline {paragraph}{NFR005.0}{30}{section*.60}
+\contentsline {paragraph}{NFR006.0}{30}{section*.61}
+\contentsline {paragraph}{NFR007.0}{30}{section*.62}
+\contentsline {subsection}{\numberline {4.1.2}Efficiency Requirements}{30}{subsection.4.1.2}
+\contentsline {subsubsection}{Performance Requirements}{30}{section*.63}
+\contentsline {paragraph}{NFR008.0}{30}{section*.64}
+\contentsline {subsubsection}{Space Requirements}{31}{section*.65}
+\contentsline {paragraph}{NFR009.0}{31}{section*.66}
+\contentsline {paragraph}{NFR010.0}{31}{section*.67}
+\contentsline {subsection}{\numberline {4.1.3}Dependability Requirements}{31}{subsection.4.1.3}
+\contentsline {paragraph}{NFR011.0}{31}{section*.68}
+\contentsline {paragraph}{NFR012.0}{31}{section*.69}
+\contentsline {subsection}{\numberline {4.1.4}Security Requirements}{31}{subsection.4.1.4}
+\contentsline {paragraph}{NFR013.0}{31}{section*.70}
+\contentsline {paragraph}{NFR014.0}{32}{section*.71}
+\contentsline {section}{\numberline {4.2}Organisational Requirements}{32}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Environmental Requirements}{32}{subsection.4.2.1}
+\contentsline {paragraph}{NFR015.0}{32}{section*.72}
+\contentsline {paragraph}{NFR016.0}{32}{section*.73}
+\contentsline {paragraph}{NFR017.0}{32}{section*.74}
+\contentsline {paragraph}{NFR018.0}{32}{section*.75}
+\contentsline {paragraph}{NFR019.0}{33}{section*.76}
+\contentsline {paragraph}{NFR020.0}{33}{section*.77}
+\contentsline {subsection}{\numberline {4.2.2}Operational Requirements}{33}{subsection.4.2.2}
+\contentsline {paragraph}{NFR021.0}{33}{section*.78}
+\contentsline {paragraph}{NFR022.0}{33}{section*.79}
+\contentsline {paragraph}{NFR023.0}{33}{section*.80}
+\contentsline {paragraph}{NFR024.0}{33}{section*.81}
+\contentsline {subsection}{\numberline {4.2.3}Development Requirements}{34}{subsection.4.2.3}
+\contentsline {paragraph}{NFR025.0}{34}{section*.82}
+\contentsline {paragraph}{NFR026.0}{34}{section*.83}
+\contentsline {paragraph}{NFR027.0}{34}{section*.84}
+\contentsline {paragraph}{NFR028.0}{34}{section*.85}
+\contentsline {section}{\numberline {4.3}External Requirements}{34}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Regulatory Requirements}{34}{subsection.4.3.1}
+\contentsline {paragraph}{NFR029.0}{34}{section*.86}
+\contentsline {subsection}{\numberline {4.3.2}Ethical Requirements}{35}{subsection.4.3.2}
+\contentsline {paragraph}{NFR030.0}{35}{section*.87}
+\contentsline {subsection}{\numberline {4.3.3}Legislative Requirements}{35}{subsection.4.3.3}
+\contentsline {subsubsection}{Accounting Requirements}{35}{section*.88}
+\contentsline {paragraph}{NFR031.0}{35}{section*.89}
+\contentsline {paragraph}{NFR032.0}{35}{section*.90}
+\contentsline {subsubsection}{Safety / Security Requirements}{35}{section*.91}
+\contentsline {chapter}{Functional Requirements}{35}{chapter.5}
+\contentsline {section}{\numberline {5.1}The application uses an RDF-Database to store all data}{37}{section.5.1}
+\contentsline {paragraph}{FR001}{37}{section*.93}
+\contentsline {paragraph}{FR002}{37}{section*.94}
+\contentsline {paragraph}{FR002}{38}{section*.95}
+\contentsline {paragraph}{FR003}{38}{section*.96}
+\contentsline {paragraph}{FR004}{38}{section*.97}
+\contentsline {section}{\numberline {5.2}The application has a user administration. There are three types of users:}{39}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Registered Users:}{39}{subsection.5.2.1}
+\contentsline {paragraph}{FR005}{39}{section*.98}
+\contentsline {paragraph}{FR006}{39}{section*.99}
+\contentsline {paragraph}{FR007}{39}{section*.100}
+\contentsline {paragraph}{FR008}{39}{section*.101}
+\contentsline {paragraph}{FR009}{39}{section*.102}
+\contentsline {paragraph}{FR010}{40}{section*.103}
+\contentsline {paragraph}{FR011}{40}{section*.104}
+\contentsline {paragraph}{FR012}{41}{section*.105}
+\contentsline {paragraph}{FR013}{41}{section*.106}
+\contentsline {subsection}{\numberline {5.2.2}Anonymous Users:}{41}{subsection.5.2.2}
+\contentsline {paragraph}{FR014}{41}{section*.107}
+\contentsline {paragraph}{FR015}{41}{section*.108}
+\contentsline {subsection}{\numberline {5.2.3}Administrator}{41}{subsection.5.2.3}
+\contentsline {paragraph}{FR016}{42}{section*.109}
+\contentsline {paragraph}{FR017}{42}{section*.110}
+\contentsline {paragraph}{FR018}{42}{section*.111}
+\contentsline {paragraph}{FR019}{42}{section*.112}
+\contentsline {section}{\numberline {5.3}Server/Algorithms}{43}{section.5.3}
+\contentsline {paragraph}{FR020}{43}{section*.113}
+\contentsline {paragraph}{FR021}{43}{section*.114}
+\contentsline {paragraph}{FR022}{43}{section*.115}
+\contentsline {chapter}{Scenarios}{43}{chapter.6}
+\contentsline {section}{\numberline {6.1}Registered User - Scenario for creating a new model}{45}{section.6.1}
+\contentsline {section}{\numberline {6.2}Registered User - Scenario for uploading an already existing model}{46}{section.6.2}
+\contentsline {section}{\numberline {6.3}Registered User - Scenario for running tests on a model from the database}{46}{section.6.3}
+\contentsline {section}{\numberline {6.4}Registered User - Scenario for change permissions on a data package}{47}{section.6.4}
+\contentsline {section}{\numberline {6.5}Unregistered User - The normal work process}{47}{section.6.5}
+\contentsline {section}{\numberline {6.6}Administrator - Control functions and crowd control}{48}{section.6.6}
+\contentsline {section}{\numberline {6.7}Administrator - Setting constraints}{49}{section.6.7}

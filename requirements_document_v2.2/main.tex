@@ -1,0 +1,33 @@
+\documentclass{book}
+\usepackage{hyperref}
+\usepackage[T2A]{fontenc}
+%Package zur Verwendung des Glossaries
+\usepackage[toc]{glossaries}
+%Bestimmt die maximale Kapitel-Gliederungstief
+%\setcounter{secnumdepth}{5}
+%\setcounter{tocdepth}{10}
+
+\title{Requirements Document for \\
+Sojabohne - Application \\
+}
+
+\author{Paul Fink \and Jens Henninger \and Florian Jennewein \and Daniel Maier}
+
+\date{\today}
+
+\makeglossaries
+
+\begin{document}
+\input{glossary}
+\maketitle
+
+
+\printglossaries
+
+\tableofcontents
+
+
+
+\input{inputs}
+
+\end{document}

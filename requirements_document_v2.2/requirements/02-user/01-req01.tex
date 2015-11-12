@@ -1,0 +1,472 @@
+%erhöht chapter zahl
+\refstepcounter{chapter}
+
+%All Requirements to 1....
+\section{UR0100}
+
+\paragraph{UR0100.0}
+\begin{description}
+\item [Statement] \textit{ 
+A web-application for \glspl{User}, which is able to apply algorithms from data-mining and machine-learning to the user's data and gives the solution, is needed.
+}
+\item [Priority] \textit{A}
+\end{description}
+
+\paragraph{UR0101.0}
+\begin{description}
+\item [Statement] \textit{
+Not only the solution itself, but also the solution process, the processing length and the algorithms name and source as an evidence of his correctness shall be given to a user
+}
+\item [Priority] \textit{A}
+\end{description}
+
+\paragraph{UR0102.0}
+\begin{description}
+\item [Statement] \textit{
+The application shall have options to choose how the solution is presented (e.g. visualization in a tree or graph)
+}
+\item [Priority] \textit{A}
+\end{description}
+
+\paragraph{UR0103.0}
+\begin{description}
+\item [Statement] \textit{
+The solution shall be downloadable
+}
+\item [Priority] \textit{A}
+\end{description}
+
+\paragraph{UR0104.0}
+\begin{description}
+\item [Statement] \textit{
+There shall be options to choose, which algorithm is want to be used; the application shall make a pre-selection of algorithms based on the uploaded data
+}
+\item [Priority] \textit{A}
+\end{description}
+
+\paragraph{UR0105.0}
+\begin{description}
+\item [Statement] \textit{
+The user's data, all created \glspl{Model} and solutions shall be stored in downloadable packages with access management
+}
+\item [Priority] \textit{A}
+\end{description}
+
+\paragraph{UR0106.0}
+\begin{description}
+\item [Statement] \textit{
+Usable with every common \gls{browser}
+}
+\item [Priority] \textit{A}
+\end{description}
+
+\paragraph{UR0107.0}
+\begin{description}
+\item [Statement] \textit{
+Data-Input via .\gls{arff} and .\gls{csv} files
+}
+\item [Priority] \textit{A}
+\end{description}
+
+\paragraph{UR0108.0}
+\begin{description}
+\item [Statement] \textit{
+Only the \gls{web-app} is needed
+}
+\item [Priority] \textit{A}
+\end{description}
+
+\paragraph{UR0109.0}
+\begin{description}
+\item [Statement] \textit{
+Should be readable via smartphone / tablet
+}
+\item [Priority] \textit{B}
+\end{description}
+
+\paragraph{UR0110.0}
+\begin{description}
+\item [Statement] \textit{
+The whole application shall be build modular and able to interact with other data-mining/machine learning applications 
+}
+\item [Priority] \textit{A}
+\end{description}
+
+\paragraph{UR0111.0}
+\begin{description}
+\item [Statement] \textit{
+The application shall work with the \gls{WEKA} libraries
+}
+\item [Priority] \textit{A}
+\end{description}
+
+\paragraph{UR0112.0}
+\begin{description}
+\item [Statement] \textit{
+The application shall work on \gls{Linux}
+}
+\item [Priority] \textit{A}
+\end{description}
+
+\paragraph{UR0113.0}
+\begin{description}
+\item [Statement] \textit{
+The application shall work on \gls{Mac} and \gls{Windows}
+}
+\item [Priority] \textit{B}
+\end{description}
+
+\paragraph{UR0114.0}
+\begin{description}
+\item [Statement] \textit{
+The application shall work on every device with min. 32gb \gls{RAM} and eight-core-processor
+}
+\item [Priority] \textit{A}
+\end{description}
+
+\paragraph{UR0115.0}
+\begin{description}
+\item [Statement] \textit{
+The application shall be able to test \glspl{Model}. Models can be uploaded or taken from the \gls{database}
+}
+\item [Priority] \textit{A}
+\end{description}
+
+\paragraph{UR0116.0}
+\begin{description}
+\item [Statement] \textit{
+The user shall be able to run algorithms simultaneous, if an \gls{administrator} allows
+}
+\item [Priority] \textit{A}
+\end{description}
+
+%-------------------------Ur0200---------
+
+\section{UR0200}
+
+\paragraph{UR0200.0}
+\begin{description}
+\item [Statement] \textit{
+All data should be stored in an \gls{RDF}-database 
+}
+\item [Priority] \textit{A}
+\end{description}
+
+\paragraph{UR0201.0}
+\begin{description}
+\item [Statement] \textit{
+The user's data shall be reusable
+}
+\item [Priority] \textit{A}
+\end{description}
+
+\paragraph{UR0202.0}
+\begin{description}
+\item [Statement] \textit{
+Access via \gls{SPARQL}
+}
+\item [Priority] \textit{A}
+\end{description}
+
+\paragraph{UR0203.0}
+\begin{description}
+\item [Statement] \textit{
+The database shall be updatable and always kept up to date
+}
+\item [Priority] \textit{A}
+\end{description}
+
+%-----------------------------------
+\section{UR0300}
+
+\paragraph{UR0300.0}
+\begin{description}
+\item [Statement] \textit{
+Access to the framework should be provided via a \gls{REST} Interface
+}
+\item [Priority] \textit{A}
+\end{description}
+
+%-----------------------------------
+\section{UR0400}
+
+\paragraph{UR0400.0}
+\begin{description}
+\item [Statement] \textit{
+The application shall be as user friendly as possible, with an intuitive interface, for users with previous knowledge in data-mining and machine learning
+}
+\item [Priority] \textit{A}
+\end{description}
+
+\paragraph{UR0401.0}
+\begin{description}
+\item [Statement] \textit{
+The application is accessible by the general public
+}
+\item [Priority] \textit{A}
+\end{description}
+
+%-----------------------------------
+\section{UR0500 - Algorithms}
+
+\paragraph{UR0501.0}
+\begin{description}
+\item [Statement] \textit{
+It should be possible to add algorithms to the application in a .\gls{jar} file
+}
+\item [Priority] \textit{B}
+\end{description}
+
+\paragraph{UR0501.1}
+\begin{description}
+\item [Statement] \textit{
+The admin has to approve all uploaded algorithms before they are released to the system 
+}
+\item [Priority] \textit{B}
+\end{description}
+
+\paragraph{UR0502.0}
+\begin{description}
+\item [Statement] \textit{
+The implemented algorithms should be unalterable.
+}
+\item [Priority] \textit{B}
+\end{description}
+
+\paragraph{UR0503.0}
+\begin{description}
+\item [Statement] \textit{
+No time limit for registered users, algorithms can run forever; possible timeout for anonymous users.
+}
+\item [Priority] \textit{A}
+\end{description}
+
+\paragraph{UR0504.0}
+\begin{description}
+\item [Statement] \textit{
+The user shall have the possibility to interrupt the running algorithm
+}
+\item [Priority] \textit{A}
+\end{description}
+
+\paragraph{UR0505.0}
+\begin{description}
+\item [Statement] \textit{
+The standard and pre-installed algorithms are the following classifying algorithms: \gls{SMO}, \gls{J48}, \gls{Random Forest}
+}
+\item [Priority] \textit{A}
+\end{description}
+
+\paragraph{UR0506.0}
+\begin{description}
+\item [Statement] \textit{
+The application should support all data-mining algorithms (e.g. clustering-algorithms)
+}
+\item [Priority] \textit{B}
+\end{description}
+
+\paragraph{UR0507.0}
+\begin{description}
+\item [Statement] \textit{
+If the number of requests exceed the constraint given by an admin then new requests are entered into a request-queue (See also {UR0601.4}) 
+}
+\item [Priority] \textit{B}
+\end{description}
+
+%----------------------------------------
+\section{UR0600}
+
+\paragraph{UR0600.0}
+\begin{description}
+\item [Statement] \textit{
+The application should have an user administration
+\\There shall be the following three user views:
+}
+\item [Priority] \textit{A}
+\end{description}
+
+\subsection{UR0601.0 Registered - User view}
+
+%\paragraph{UR0601.0}
+%\begin{description}
+%\item [Statement] \textit{
+%Registered - User view
+%}
+%\item [Priority] \textit{A}
+%\end{description}
+
+\paragraph{UR0601.1}
+\begin{description}
+\item [Statement] \textit{
+Registered user data is private, meaning it cannot be accessed by others.
+}
+\item [Priority] \textit{A}
+\end{description}
+
+\paragraph{UR0601.2}
+\begin{description}
+\item [Statement] \textit{
+Registered user should be able to share informations with other users.
+}
+\item [Priority] \textit{A}
+\end{description}
+
+\paragraph{UR0601.3}
+\begin{description}
+\item [Statement] \textit{
+It shall be possible to create user groups.
+}
+\item [Priority] \textit{A}
+\end{description}
+
+\paragraph{UR0601.4}
+\begin{description}
+\item [Statement] \textit{
+Registered User are prioritized in the request-queue
+}
+\item [Priority] \textit{A}
+\end{description}
+
+\subsection{UR0602.0 Anonymous - User view}
+
+%\paragraph{UR0602.0}
+%\begin{description}
+%\item [Statement] \textit{
+%Anonymous - User view
+%}
+%\item [Priority] \textit{A}
+%\end{description}
+
+\paragraph{UR0602.1}
+\begin{description}
+\item [Statement] \textit{
+The \gls{anonymous user} may use the same features as the registered users.
+}
+\item [Priority] \textit{A}
+\end{description}
+
+\paragraph{UR0602.2}
+\begin{description}
+\item [] \textit{
+BUT they have the following constraints:
+}
+\end{description}
+
+\paragraph{UR0602.2.1 Time-constraints:}
+\begin{description}
+%\item [Statement] \textit{
+%Time-constraints:
+%}
+\item [Priority] \textit{A}
+\end{description}
+
+\paragraph{UR0602.2.1.1}
+\begin{description}
+\item [Statement] \textit{
+After 30 days their saved data is deleted
+}
+\item [Priority] \textit{A}
+\end{description}
+
+\paragraph{UR0602.2.1.2}
+\begin{description}
+\item [Statement] \textit{
+The admin can set a runtime-timeout for algorithm
+}
+\item [Priority] \textit{A}
+\end{description}
+
+\paragraph{UR0602.2.2 Space-constraints:}
+\begin{description}
+%\item [Statement] \textit{
+%Space-constraints:
+%}
+\item [Priority] \textit{A}
+\end{description}
+
+\paragraph{UR0602.2.2.1}
+\begin{description}
+\item [Statement] \textit{
+The admin can set a maximum upload filesize
+}
+\item [Priority] \textit{A}
+\end{description}
+
+%-------------------------------
+\subsection{UR0603.0 Administrator view}
+
+%\paragraph{UR0603.0}
+%\begin{description}
+%\item [Statement] \textit{
+%Administrator view
+%}
+%\item [Priority] \textit{A}
+%\end{description}
+
+\paragraph{UR0603.1}
+\begin{description}
+\item [Statement] \textit{
+There shall be a group of administrators for the organisation of the users with the possibility to ban users from the web-application
+}
+\item [Priority] \textit{A}
+\end{description}
+
+\paragraph{UR0603.2}
+\begin{description}
+\item [Statement] \textit{
+Set maximum number of simultaneously running algorithms
+}
+\item [Priority] \textit{A}
+\end{description}
+
+\paragraph{UR0603.3}
+\begin{description}
+\item [Statement] \textit{
+Set the number of algorithms, a user can run simultaneous
+}
+\item [Priority] \textit{A}
+\end{description}
+
+%-----------UR0700--------------------
+\section{UR0700}
+
+\paragraph{UR0700}
+\begin{description}
+\item [Statement] \textit{
+Programming language shall be \gls{Java} 8
+}
+\item [Priority] \textit{A}
+\end{description}
+
+%----------UR0800----------------------------------
+\section{UR0800}
+
+\paragraph{UR0800}
+\begin{description}
+\item [Statement] \textit{
+The interface and system language shall be english
+}
+\item [Priority] \textit{A}
+\end{description}
+
+%-----------UR0900--------------------------------
+\section{UR0900}
+
+\paragraph{UR0900}
+\begin{description}
+\item [Statement] \textit{
+The application shall use \gls{HTTPS}
+}
+\item [Priority] \textit{A}
+\end{description}
+
+%----------UR1000-----------------------------------
+\section{UR1000}
+
+\paragraph{UR1000}
+\begin{description}
+\item [Statement] \textit{
+The application shall work on multiple servers, which are able to interact with each other through the application.
+}
+\item [Priority] \textit{A}
+\end{description}

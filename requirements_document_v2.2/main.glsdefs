@@ -1,0 +1,1050 @@
+\ifglsentryexists{API}{}%
+{%
+\gls@defglossaryentry{API}%
+{%
+name={Application programming interface},%
+sort={Application programming interface},%
+type={main},%
+first={Application programming interface},%
+firstplural={Application programming interfaces},%
+text={Application programming interface},%
+plural={Application programming interfaces},%
+description={The application programming interface describes how to interact with a system. The interface provides methodes which can be accessed from outside the system},%
+descriptionplural={The application programming interface describes how to interact with a system. The interface provides methodes which can be accessed from outside the system},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{administrator}{}%
+{%
+\gls@defglossaryentry{administrator}%
+{%
+name={administrator},%
+sort={administrator},%
+type={main},%
+first={administrator},%
+firstplural={administrators},%
+text={administrator},%
+plural={administrators},%
+description={(Admin) Human individual, who monitors the system and controls user activities},%
+descriptionplural={(Admin) Human individual, who monitors the system and controls user activities},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{anonymous user}{}%
+{%
+\gls@defglossaryentry{anonymous user}%
+{%
+name={anonymous user},%
+sort={anonymous user},%
+type={main},%
+first={anonymous user},%
+firstplural={anonymous users},%
+text={anonymous user},%
+plural={anonymous users},%
+description={User, who isn't registered in the system},%
+descriptionplural={User, who isn't registered in the system},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Tomcat}{}%
+{%
+\gls@defglossaryentry{Tomcat}%
+{%
+name={Apache Tomcat},%
+sort={Apache Tomcat},%
+type={main},%
+first={Apache Tomcat},%
+firstplural={Apache Tomcats},%
+text={Apache Tomcat},%
+plural={Apache Tomcats},%
+description={Open source servlet container and http web server},%
+descriptionplural={Open source servlet container and http web server},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{arff}{}%
+{%
+\gls@defglossaryentry{arff}%
+{%
+name={arff},%
+sort={arff},%
+type={main},%
+first={arff},%
+firstplural={arffs},%
+text={arff},%
+plural={arffs},%
+description={Attribute-Relation File Format - ASCII format used for machine learning},%
+descriptionplural={Attribute-Relation File Format - ASCII format used for machine learning},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{browser}{}%
+{%
+\gls@defglossaryentry{browser}%
+{%
+name={Browser},%
+sort={Browser},%
+type={main},%
+first={Browser},%
+firstplural={Browsers},%
+text={Browser},%
+plural={Browsers},%
+description={Web-Browser - Software application for presenting/traversing informations in web; common browsers: Internet Explorer(IE), Firefox, Chrome, Safari, Opera},%
+descriptionplural={Web-Browser - Software application for presenting/traversing informations in web; common browsers: Internet Explorer(IE), Firefox, Chrome, Safari, Opera},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{csv}{}%
+{%
+\gls@defglossaryentry{csv}%
+{%
+name={csv},%
+sort={csv},%
+type={main},%
+first={csv},%
+firstplural={csvs},%
+text={csv},%
+plural={csvs},%
+description={Comma-separated values(csv): file format, which stores tabular data in plain text},%
+descriptionplural={Comma-separated values(csv): file format, which stores tabular data in plain text},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{database}{}%
+{%
+\gls@defglossaryentry{database}%
+{%
+name={database},%
+sort={database},%
+type={main},%
+first={database},%
+firstplural={databases},%
+text={database},%
+plural={databases},%
+description={organized collection of data},%
+descriptionplural={organized collection of data},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Interface}{}%
+{%
+\gls@defglossaryentry{Interface}%
+{%
+name={Interface},%
+sort={Interface},%
+type={main},%
+first={Interface},%
+firstplural={Interfaces},%
+text={Interface},%
+plural={Interfaces},%
+description={bla},%
+descriptionplural={bla},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Java}{}%
+{%
+\gls@defglossaryentry{Java}%
+{%
+name={Java},%
+sort={Java},%
+type={main},%
+first={Java},%
+firstplural={Javas},%
+text={Java},%
+plural={Javas},%
+description={concurrent, object-oriented programming language},%
+descriptionplural={concurrent, object-oriented programming language},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Java EE}{}%
+{%
+\gls@defglossaryentry{Java EE}%
+{%
+name={Java EE},%
+sort={Java EE},%
+type={main},%
+first={Java EE},%
+firstplural={Java EEs},%
+text={Java EE},%
+plural={Java EEs},%
+description={Java Enterprise Edition},%
+descriptionplural={Java Enterprise Edition},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Query}{}%
+{%
+\gls@defglossaryentry{Query}%
+{%
+name={Query},%
+sort={Query},%
+type={main},%
+first={Query},%
+firstplural={Querys},%
+text={Query},%
+plural={Querys},%
+description={in this document, query is called the process influenced by a user: from uploading data to the start of a specific algorithm},%
+descriptionplural={in this document, query is called the process influenced by a user: from uploading data to the start of a specific algorithm},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{RDF}{}%
+{%
+\gls@defglossaryentry{RDF}%
+{%
+name={RDF},%
+sort={RDF},%
+type={main},%
+first={RDF},%
+firstplural={RDFs},%
+text={RDF},%
+plural={RDFs},%
+description={Resource Description Framework},%
+descriptionplural={Resource Description Framework},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{REST}{}%
+{%
+\gls@defglossaryentry{REST}%
+{%
+name={REST},%
+sort={REST},%
+type={main},%
+first={REST},%
+firstplural={RESTs},%
+text={REST},%
+plural={RESTs},%
+description={Representational State Transfer},%
+descriptionplural={Representational State Transfer},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Servlet}{}%
+{%
+\gls@defglossaryentry{Servlet}%
+{%
+name={Servlet},%
+sort={Servlet},%
+type={main},%
+first={Servlet},%
+firstplural={Servlets},%
+text={Servlet},%
+plural={Servlets},%
+description={an object(class instance), which is able to receive and to response requests},%
+descriptionplural={an object(class instance), which is able to receive and to response requests},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{User}{}%
+{%
+\gls@defglossaryentry{User}%
+{%
+name={User},%
+sort={User},%
+type={main},%
+first={User},%
+firstplural={Users},%
+text={User},%
+plural={Users},%
+description={a human individual, who’s using the system},%
+descriptionplural={a human individual, who’s using the system},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{HTTPS}{}%
+{%
+\gls@defglossaryentry{HTTPS}%
+{%
+name={Hypertext Transfer Protocoll Secure},%
+sort={Hypertext Transfer Protocoll Secure},%
+type={main},%
+first={Hypertext Transfer Protocoll Secure},%
+firstplural={Hypertext Transfer Protocoll Secures},%
+text={Hypertext Transfer Protocoll Secure},%
+plural={Hypertext Transfer Protocoll Secures},%
+description={Hypertext Transfer Protocol Secure (HTTPS) is a communications protocol for secure communication over a computer network, with especially wide deployment on the Internet. Technically, it is not a protocol in and of itself; rather, it is the result of simply layering the Hypertext Transfer Protocol (HTTP) on top of the SSL/TLS protocol, thus adding the security capabilities of SSL/TLS to standard HTTP communications. (source: en.wikipedia.org: 11.11.2013)},%
+descriptionplural={Hypertext Transfer Protocol Secure (HTTPS) is a communications protocol for secure communication over a computer network, with especially wide deployment on the Internet. Technically, it is not a protocol in and of itself; rather, it is the result of simply layering the Hypertext Transfer Protocol (HTTP) on top of the SSL/TLS protocol, thus adding the security capabilities of SSL/TLS to standard HTTP communications. (source: en.wikipedia.org: 11.11.2013)},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{test data}{}%
+{%
+\gls@defglossaryentry{test data}%
+{%
+name={test data},%
+sort={test data},%
+type={main},%
+first={test data},%
+firstplural={test datas},%
+text={test data},%
+plural={test datas},%
+description={A test-data or training set is a set of data used to discover potentially predictive relationships. A test set is a set of data used to assess the strength and utility of a predictive relationship.},%
+descriptionplural={A test-data or training set is a set of data used to discover potentially predictive relationships. A test set is a set of data used to assess the strength and utility of a predictive relationship.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ASCII}{}%
+{%
+\gls@defglossaryentry{ASCII}%
+{%
+name={ASCII},%
+sort={ASCII},%
+type={main},%
+first={ASCII},%
+firstplural={ASCIIs},%
+text={ASCII},%
+plural={ASCIIs},%
+description={American Standard Code for Information Interchange (ASCII) is a character-encoding scheme. ASCII codes represent text in computers, communications equipment, and other devices that use text.},%
+descriptionplural={American Standard Code for Information Interchange (ASCII) is a character-encoding scheme. ASCII codes represent text in computers, communications equipment, and other devices that use text.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ID}{}%
+{%
+\gls@defglossaryentry{ID}%
+{%
+name={ID},%
+sort={ID},%
+type={main},%
+first={ID},%
+firstplural={IDs},%
+text={ID},%
+plural={IDs},%
+description={(Identification) Is a unique number that is used to identify a specific object},%
+descriptionplural={(Identification) Is a unique number that is used to identify a specific object},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{web-app}{}%
+{%
+\gls@defglossaryentry{web-app}%
+{%
+name={web-app},%
+sort={web-app},%
+type={main},%
+first={web-app},%
+firstplural={web-apps},%
+text={web-app},%
+plural={web-apps},%
+description={A web application (web-app) is a client-server software application in which the client (or user interface) runs in a web browser.},%
+descriptionplural={A web application (web-app) is a client-server software application in which the client (or user interface) runs in a web browser.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{framework}{}%
+{%
+\gls@defglossaryentry{framework}%
+{%
+name={framework},%
+sort={framework},%
+type={main},%
+first={framework},%
+firstplural={frameworks},%
+text={framework},%
+plural={frameworks},%
+description={A software framework is an abstraction in which software providing generic functionality can be selectively changed by additional user-written code, thus providing application-specific software.},%
+descriptionplural={A software framework is an abstraction in which software providing generic functionality can be selectively changed by additional user-written code, thus providing application-specific software.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Linux}{}%
+{%
+\gls@defglossaryentry{Linux}%
+{%
+name={Linux},%
+sort={Linux},%
+type={main},%
+first={Linux},%
+firstplural={Linuxs},%
+text={Linux},%
+plural={Linuxs},%
+description={Linux is a Unix-like computer operating system (OS) assembled under the model of free and open-source software development and distribution.},%
+descriptionplural={Linux is a Unix-like computer operating system (OS) assembled under the model of free and open-source software development and distribution.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Mac}{}%
+{%
+\gls@defglossaryentry{Mac}%
+{%
+name={Linux},%
+sort={Linux},%
+type={main},%
+first={Linux},%
+firstplural={Linuxs},%
+text={Linux},%
+plural={Linuxs},%
+description={A computer operating system (OS)},%
+descriptionplural={A computer operating system (OS)},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Windows}{}%
+{%
+\gls@defglossaryentry{Windows}%
+{%
+name={Linux},%
+sort={Linux},%
+type={main},%
+first={Linux},%
+firstplural={Linuxs},%
+text={Linux},%
+plural={Linuxs},%
+description={A computer operating system (OS)},%
+descriptionplural={A computer operating system (OS)},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{RAM}{}%
+{%
+\gls@defglossaryentry{RAM}%
+{%
+name={Linux},%
+sort={Linux},%
+type={main},%
+first={Linux},%
+firstplural={Linuxs},%
+text={Linux},%
+plural={Linuxs},%
+description={Random-access memory (RAM) is a form of computer data storage},%
+descriptionplural={Random-access memory (RAM) is a form of computer data storage},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{SMO}{}%
+{%
+\gls@defglossaryentry{SMO}%
+{%
+name={SMO},%
+sort={SMO},%
+type={main},%
+first={SMO},%
+firstplural={SMOs},%
+text={SMO},%
+plural={SMOs},%
+description={A Data-Mining algorithm},%
+descriptionplural={A Data-Mining algorithm},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{J48}{}%
+{%
+\gls@defglossaryentry{J48}%
+{%
+name={J48},%
+sort={J48},%
+type={main},%
+first={J48},%
+firstplural={J48s},%
+text={J48},%
+plural={J48s},%
+description={J48 is an open source Java implementation of the C4.5 algorithm in the weka data mining tool.},%
+descriptionplural={J48 is an open source Java implementation of the C4.5 algorithm in the weka data mining tool.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Random Forest}{}%
+{%
+\gls@defglossaryentry{Random Forest}%
+{%
+name={Random Forest},%
+sort={Random Forest},%
+type={main},%
+first={Random Forest},%
+firstplural={Random Forests},%
+text={Random Forest},%
+plural={Random Forests},%
+description={Random forests are an ensemble learning method for classification, regression and other tasks, that operate by constructing a multitude of decision trees at training time and outputting the class that is the mode of the classes (classification) or mean prediction (regression) of the individual trees. Random forests correct for decision trees' habit of overfitting to their training set.},%
+descriptionplural={Random forests are an ensemble learning method for classification, regression and other tasks, that operate by constructing a multitude of decision trees at training time and outputting the class that is the mode of the classes (classification) or mean prediction (regression) of the individual trees. Random forests correct for decision trees' habit of overfitting to their training set.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{jar}{}%
+{%
+\gls@defglossaryentry{jar}%
+{%
+name={jar},%
+sort={jar},%
+type={main},%
+first={jar},%
+firstplural={jars},%
+text={jar},%
+plural={jars},%
+description={Java Archive is a package file format typically used to aggregate many Java class files and associated metadata and resources (text, images, etc.) into one file to distribute application software or libraries on the Java platform.},%
+descriptionplural={Java Archive is a package file format typically used to aggregate many Java class files and associated metadata and resources (text, images, etc.) into one file to distribute application software or libraries on the Java platform.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{EULA}{}%
+{%
+\gls@defglossaryentry{EULA}%
+{%
+name={EULA},%
+sort={EULA},%
+type={main},%
+first={EULA},%
+firstplural={EULAs},%
+text={EULA},%
+plural={EULAs},%
+description={An end-user license agreement (EULA) or software license agreement is the contract between the licensor and purchaser, establishing the purchaser's right to use the software.},%
+descriptionplural={An end-user license agreement (EULA) or software license agreement is the contract between the licensor and purchaser, establishing the purchaser's right to use the software.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{SPARQL}{}%
+{%
+\gls@defglossaryentry{SPARQL}%
+{%
+name={SPARQL},%
+sort={SPARQL},%
+type={main},%
+first={SPARQL},%
+firstplural={SPARQLs},%
+text={SPARQL},%
+plural={SPARQLs},%
+description={Protocol and RDF Query Language: RDF query language for databases, able to retrieve and manipulate data stored in RDF format},%
+descriptionplural={Protocol and RDF Query Language: RDF query language for databases, able to retrieve and manipulate data stored in RDF format},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{IEEE}{}%
+{%
+\gls@defglossaryentry{IEEE}%
+{%
+name={IEEE},%
+sort={IEEE},%
+type={main},%
+first={IEEE},%
+firstplural={IEEEs},%
+text={IEEE},%
+plural={IEEEs},%
+description={IEEE stands for the "Institute of Electrical and Electronics Engineers".},%
+descriptionplural={IEEE stands for the "Institute of Electrical and Electronics Engineers".},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{WEKA}{}%
+{%
+\gls@defglossaryentry{WEKA}%
+{%
+name={weka},%
+sort={weka},%
+type={main},%
+first={weka},%
+firstplural={wekas},%
+text={weka},%
+plural={wekas},%
+description={Suite of machine learning software, which contains a collection of tools and algorithms for data analysis.},%
+descriptionplural={Suite of machine learning software, which contains a collection of tools and algorithms for data analysis.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Model}{}%
+{%
+\gls@defglossaryentry{Model}%
+{%
+name={Model},%
+sort={Model},%
+type={main},%
+first={Model},%
+firstplural={Models},%
+text={Model},%
+plural={Models},%
+description={A -statistical- model embodies a set of assumptions concerning the generation of the observed data, and similar data from a larger population. A model represents, often in considerably idealized form, the data-generating process.},%
+descriptionplural={A -statistical- model embodies a set of assumptions concerning the generation of the observed data, and similar data from a larger population. A model represents, often in considerably idealized form, the data-generating process.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%

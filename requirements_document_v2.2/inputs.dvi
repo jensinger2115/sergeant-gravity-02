@@ -1,0 +1,504 @@
+/m/it/10 pos-
+ []
+
+
+Overfull \hbox (10.73326pt too wide) in paragraph at lines 229--230
+\OT1/cmr/m/it/10 si-
+ []
+
+
+Overfull \hbox (11.75546pt too wide) in paragraph at lines 229--230
+\OT1/cmr/m/it/10 ble
+ []
+
+
+Overfull \hbox (22.74428pt too wide) in paragraph at lines 229--230
+\OT1/cmr/m/it/10 time-
+ []
+
+
+Overfull \hbox (13.79991pt too wide) in paragraph at lines 229--230
+\OT1/cmr/m/it/10 out
+ []
+
+
+Overfull \hbox (12.39436pt too wide) in paragraph at lines 229--230
+\OT1/cmr/m/it/10 for
+ []
+
+
+Overfull \hbox (29.89981pt too wide) in paragraph at lines 229--230
+\OT1/cmr/m/it/10 anony-
+ []
+
+
+Overfull \hbox (22.74432pt too wide) in paragraph at lines 229--230
+\OT1/cmr/m/it/10 mous
+ []
+
+
+Overfull \hbox (25.42761pt too wide) in paragraph at lines 229--230
+\OT1/cmr/m/it/10 users. 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.230 \item [Priority]
+                       \textit{A}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: \begin{document} ended by \end{description}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.231 \end{description}
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (7.43329pt too wide) in paragraph at lines 230--232
+\OT1/cmr/m/it/10 A
+ []
+
+! Undefined control sequence.
+l.233 \paragraph
+                {UR0504.0}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.233 \paragraph{U
+                  R0504.0}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no U in font nullfont!
+Missing character: There is no R in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 0 in font nullfont!
+
+! LaTeX Error: Environment description undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.234 \begin{description}
+                         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 233--235
+[] 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.235 \item [Statement]
+                        \textit{
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (16.86655pt too wide) in paragraph at lines 237--238
+\OT1/cmr/m/it/10 The
+ []
+
+
+Overfull \hbox (18.2721pt too wide) in paragraph at lines 237--238
+\OT1/cmr/m/it/10 user
+ []
+
+
+Overfull \hbox (19.93323pt too wide) in paragraph at lines 237--238
+\OT1/cmr/m/it/10 shall
+ []
+
+
+Overfull \hbox (19.42209pt too wide) in paragraph at lines 237--238
+\OT1/cmr/m/it/10 have
+ []
+
+
+Overfull \hbox (13.03323pt too wide) in paragraph at lines 237--238
+\OT1/cmr/m/it/10 the
+ []
+
+
+Overfull \hbox (17.37766pt too wide) in paragraph at lines 237--238
+\OT1/cmr/m/it/10 pos-
+ []
+
+
+Overfull \hbox (10.73326pt too wide) in paragraph at lines 237--238
+\OT1/cmr/m/it/10 si-
+ []
+
+
+Overfull \hbox (13.7999pt too wide) in paragraph at lines 237--238
+\OT1/cmr/m/it/10 bil-
+ []
+
+
+Overfull \hbox (11.24435pt too wide) in paragraph at lines 237--238
+\OT1/cmr/m/it/10 ity
+ []
+
+
+Overfull \hbox (8.43327pt too wide) in paragraph at lines 237--238
+\OT1/cmr/m/it/10 to
+ []
+
+
+Overfull \hbox (12.26659pt too wide) in paragraph at lines 237--238
+\OT1/cmr/m/it/10 in-
+ []
+
+
+Overfull \hbox (15.71652pt too wide) in paragraph at lines 237--238
+\OT1/cmr/m/it/10 ter-
+ []
+
+
+Overfull \hbox (18.01654pt too wide) in paragraph at lines 237--238
+\OT1/cmr/m/it/10 rupt
+ []
+
+
+Overfull \hbox (13.03323pt too wide) in paragraph at lines 237--238
+\OT1/cmr/m/it/10 the
+ []
+
+
+Overfull \hbox (18.7832pt too wide) in paragraph at lines 237--238
+\OT1/cmr/m/it/10 run-
+ []
+
+
+Overfull \hbox (18.911pt too wide) in paragraph at lines 237--238
+\OT1/cmr/m/it/10 ning
+ []
+
+
+Overfull \hbox (11.24437pt too wide) in paragraph at lines 237--238
+\OT1/cmr/m/it/10 al-
+ []
+
+
+Overfull \hbox (13.28879pt too wide) in paragraph at lines 237--238
+\OT1/cmr/m/it/10 go-
+ []
+
+
+Overfull \hbox (24.66142pt too wide) in paragraph at lines 237--238
+\OT1/cmr/m/it/10 rithm 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.238 \item [Priority]
+                       \textit{A}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: \begin{document} ended by \end{description}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.239 \end{description}
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (7.43329pt too wide) in paragraph at lines 238--240
+\OT1/cmr/m/it/10 A
+ []
+
+! Undefined control sequence.
+l.241 \paragraph
+                {UR0505.0}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.241 \paragraph{U
+                  R0505.0}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no U in font nullfont!
+Missing character: There is no R in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 0 in font nullfont!
+
+! LaTeX Error: Environment description undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.242 \begin{description}
+                         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 241--243
+[] 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.243 \item [Statement]
+                        \textit{
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (13.03323pt too wide) in paragraph at lines 245--246
+\OT1/cmr/m/it/10 the
+ []
+
+
+Overfull \hbox (21.72208pt too wide) in paragraph at lines 245--246
+\OT1/cmr/m/it/10 stan-
+ []
+
+
+Overfull \hbox (19.03876pt too wide) in paragraph at lines 245--246
+\OT1/cmr/m/it/10 dard
+ []
+
+
+Overfull \hbox (15.84436pt too wide) in paragraph at lines 245--246
+\OT1/cmr/m/it/10 and
+ []
+
+
+Overfull \hbox (16.9943pt too wide) in paragraph at lines 245--246
+\OT1/cmr/m/it/10 pre-
+ []
+
+
+Overfull \hbox (36.0331pt too wide) in paragraph at lines 245--246
+\OT1/cmr/m/it/10 installed
+ []
+
+
+Overfull \hbox (11.24437pt too wide) in paragraph at lines 245--246
+\OT1/cmr/m/it/10 al-
+ []
+
+
+Overfull \hbox (13.28879pt too wide) in paragraph at lines 245--246
+\OT1/cmr/m/it/10 go-
+ []
+
+
+Overfull \hbox (27.98315pt too wide) in paragraph at lines 245--246
+\OT1/cmr/m/it/10 rithms
+ []
+
+
+Overfull \hbox (13.41655pt too wide) in paragraph at lines 245--246
+\OT1/cmr/m/it/10 are
+ []
+
+
+Overfull \hbox (13.03323pt too wide) in paragraph at lines 245--246
+\OT1/cmr/m/it/10 the
+ []
+
+
+Overfull \hbox (14.31102pt too wide) in paragraph at lines 245--246
+\OT1/cmr/m/it/10 fol-
+ []
+
+
+Overfull \hbox (17.88878pt too wide) in paragraph at lines 245--246
+\OT1/cmr/m/it/10 low-
+ []
+
+
+Overfull \hbox (13.2888pt too wide) in paragraph at lines 245--246
+\OT1/cmr/m/it/10 ing
+ []
+
+
+Overfull \hbox (19.9332pt too wide) in paragraph at lines 245--246
+\OT1/cmr/m/it/10 clas-
+ []
+
+
+Overfull \hbox (10.73326pt too wide) in paragraph at lines 245--246
+\OT1/cmr/m/it/10 si-
+ []
+
+
+Overfull \hbox (11.49991pt too wide) in paragraph at lines 245--246
+\OT1/cmr/m/it/10 fy-
+ []
+
+
+Overfull \hbox (13.2888pt too wide) in paragraph at lines 245--246
+\OT1/cmr/m/it/10 ing
+ []
+
+
+Overfull \hbox (11.24437pt too wide) in paragraph at lines 245--246
+\OT1/cmr/m/it/10 al-
+ []
+
+
+Overfull \hbox (13.28879pt too wide) in paragraph at lines 245--246
+\OT1/cmr/m/it/10 go-
+ []
+
+
+Overfull \hbox (31.0498pt too wide) in paragraph at lines 245--246
+\OT1/cmr/m/it/10 rithms:
+ []
+
+
+Overfull \hbox (25.32208pt too wide) in paragraph at lines 245--246
+\OT1/cmr/m/it/10 SMO,
+ []
+
+
+Overfull \hbox (18.53877pt too wide) in paragraph at lines 245--246
+\OT1/cmr/m/it/10 J48,
+ []
+
+
+Overfull \hbox (21.0943pt too wide) in paragraph at lines 245--246
+\OT1/cmr/m/it/10 Ran-
+ []
+
+
+Overfull \hbox (18.3999pt too wide) in paragraph at lines 245--246
+\OT1/cmr/m/it/10 dom
+ []
+
+
+Overfull \hbox (18.66652pt too wide) in paragraph at lines 245--246
+\OT1/cmr/m/it/10 For-
+ []
+
+
+Overfull \hbox (12.95963pt too wide) in paragraph at lines 245--246
+\OT1/cmr/m/it/10 est 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.246 \item [Priority]
+                       \textit{A}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: \begin{document} ended by \end{description}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.247 \end{description}
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (7.43329pt too wide) in paragraph at lines 246--248
+\OT1/cmr/m/it/10 A
+ []
+
+! Undefined control sequence.
+l.249 \paragraph
+                {UR0506.0}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.249 \paragraph{U
+                  R0506.0}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no U in font nullfont!
+Missing ch

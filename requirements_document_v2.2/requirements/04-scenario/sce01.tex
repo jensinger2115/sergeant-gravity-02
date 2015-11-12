@@ -1,0 +1,114 @@
+%----------Scenarius für Unregistered User----
+\section{Registered User - Scenario for creating a new model}
+
+\begin{description}
+  \item [INITIAL ASSUMPTION:]
+    \textit{A registered user wants to create a new model}
+  \item [NORMAL:]
+    \textit{The user enters the homepage and logs in. Next he chooses the tap "create new model". Then he uploads his input data. All uploaded data and chosen options are save to the database as soon as they are available. Next he chooses the split between trainings data and test data in percent (It is not possible to choose 0\% for trainings data). Afterwards he may upload any number of additional test data.  Next he chooses an algorithm for his input (a preselection has been made by the server based on the input data. Therefore only algorithm that can handle the input may be selected). After that the user may set the algorithms parameters and choose an output option. He can also stick with default options. Next the user can start the algorithm by clicking on the button "run algorithm". Until the algorithm is finished the user has the option the cancel it at any time. Upon completion the output appears and is saved to the database.}
+  \item [WHAT CAN GO WRONG:]
+    \textit{\\1.) Server not available \\2.) Server crashes while the user is uploading data \\3.) Server crashes while saving to the database \\4.) Server crashes while running the algorithm \\5.) The user uploads file with the wrong format - Error
+}
+  \item [OTHER ACTIVITIES:]
+    \textit{none}
+  \item [SYSTEM STATE ON COMPLETION:]
+    \textit{User is logged in. Database contains a new package with all information given by the user and the result(output) of the algorithm.}
+\end{description}
+
+\section{Registered User - Scenario for uploading an already existing model}
+\begin{description}
+  \item [INITIAL ASSUMPTION:]
+    \textit{A registered user wants to upload an already existing model into the database}
+  \item [NORMAL:]
+    \textit{The user enters the homepage and logs in. Next he chooses the tab "upload existing model". Then he uploads his model, which is saved to the database.}
+  \item [WHAT CAN GO WRONG:]
+    \textit{\\1.) Server not available \\2.) Server crashes while the user is uploading data \\3.) Server crashes while running the algorithm \\4.) The user uploads file with the wrong format - Error
+}
+  \item [OTHER ACTIVITIES:]
+    \textit{none}
+  \item [SYSTEM STATE ON COMPLETION:]
+    \textit{User is logged in. Database contains a new package with the model uploaded by the user.}
+\end{description}
+
+\section{Registered User - Scenario for running tests on a model from the database}
+\begin{description}
+  \item [INITIAL ASSUMPTION:]
+    \textit{A registered user wants to run a test on a model from the database}
+  \item [NORMAL:]
+    \textit{The user enters the homepage and logs in. Next he chooses the tab "browse packages", which brings him to a page listing all existing packages. Then he picks the package with the model he wants to run test on. They are identifiable by a unique package id. There is also a search bar, where he may enter the package id. After finding his package and clicking on it the option "run test on model" appears. The user may now choose to upload own test data (which will be saved to the database) or pick already existing (if any) test data from the package. Afterwards he starts the test via the "start test"-button. Upon completing the test the server return the result.}
+  \item [WHAT CAN GO WRONG:]
+    \textit{\\1.) Server not available \\2.) Server crashes while the user is uploading data \\3.) Server crashes while saving to the database \\4.) Server crashes while running the test \\5.) The user uploads file with the wrong format - Error \\6.) The user tries to access a package that he has no reading rights to - Error
+}
+  \item [OTHER ACTIVITIES:]
+    \textit{none}
+  \item [SYSTEM STATE ON COMPLETION:]
+    \textit{User is logged in. Database contains uploaded data of the user (if he uploaded any)}
+\end{description}
+
+\section{Registered User - Scenario for change permissions on a data package}
+\begin{description}
+  \item [INITIAL ASSUMPTION:]
+    \textit{A registered user wants to share a data package with a friend}
+  \item [NORMAL:]
+    \textit{The user enters the homepage and logs in. Next he or she chooses the tab "my packages", which brings him or her to a page that shows all packages he created. Now he or she clicks on the package he wants to share (Packages are identifiable by a unique package id). The option "change permission" is now available. After clicking on it, the user can now give reading and/or writing rights to any registered user by entering their username or email address into the specified field. By entering everyone into the field, he or she makes is package public, meaning that anyone can access the package even unregistered users. After hitting the save button, the new permissions are saved into the database and the package is handled accordingly from then on.}
+  \item [WHAT CAN GO WRONG:]
+    \textit{\\1.) Server not available \\2.) Server crashes while saving to the database \\3.) User exits the page without saving
+}
+  \item [OTHER ACTIVITIES:]
+    \textit{none}
+  \item [SYSTEM STATE ON COMPLETION:]
+    \textit{User is logged in. Package permission settings are saved. The package is now available for reading and writing to all added users.}
+\end{description}
+
+\section{Unregistered User - The normal work process}
+\begin{description}
+  \item [Unregistered User]
+    \textit{See the Scenarios for the registered User from above, with the following differences:
+		\\-If the unregistered user tries to upload data, which is bigger than the admin-set limitation the user gets an error message and will be redirected to the previous page
+		\\-If the unregistered user tries to start multiple algorithms, with a total number bigger than the admin-set limitation the user gets an error message and will be redirected to the previous page
+		\\-If an algorithm of an unregistered user runs longer than the admin-set limitation, he gets a timeout error message and will be redirected to the previous page
+		\\-He has no possibility to create a group and set access rights and his data and results will be deleted after 30 days
+		\\-On the main page he will be referred that his uploaded data and results are deleted after 30 days, the missing possibility to create groups with access-right-system, and that there are the admin-set constraints; below a button for registration
+		\\-If he clicks on the registration button he will be directed to a registration page, where he has to enter his email, a username (he will be noticed, if a username is already in use) and a password; after confirmation his account is created
+}
+\end{description}
+
+\section{Administrator - Control functions and crowd control}
+\begin{description}
+  \item [INITIAL ASSUMPTION:]
+    \textit{The administrator has to do his job, in this scenario the checking of Algorithms.}
+  \item [NORMAL:]
+    \textit{The administrator enters the homepage and logs into his account. He enters the tap "Uploaded User Algorithms". There he has a list of the new uploaded user created algorithms. He chooses and clicks on one of the list. After a short overview over the source code to verify that there’s no obvious junk, he clicks on "Test" to test the algorithm on the data the user uploaded in a secured suitcase. If the administrator would find something destructive or illegal he could click on the username of the user, who uploaded the code and would enter the "User settings" tap (this tap he can access every time when he clicks on "Registered User" on his main page and then on a username of the displayed list; so he’s able to ban user or to see the user data and activities whenever he wants). There he could click on the "Ban this User" button to ban the user from the site, delete his account and saved data. While the test is running, he’s able to check other algorithms or to do whatever he has to do. If the test finishes with success the administrator clicks on "Unlock algorithm", so the user gets the result of the algorithm and the possibility to choose it for the next time(so the algorithm is stored in the database). If the algorithm doesn’t work, the file would be marked as fail and the user who uploaded it would get an error message.
+The admin can continue working.}
+  \item [WHAT CAN GO WRONG:]
+    \textit{\\1.) Junk code stays undetected
+\\2.) A user could be banned for no reason
+\\3.) The algorithm could run endless  
+}
+  \item [OTHER ACTIVITIES:]
+    \textit{none}
+  \item [SYSTEM STATE ON COMPLETION:]
+    \textit{Upon clicking the return button the admin is redirected to the list of algorithms}
+\end{description}
+
+\section{Administrator - Setting constraints}
+\begin{description}
+  \item [INITIAL ASSUMPTION:]
+    \textit{The administrator has to do his job, in this scenario the setting of constraints.
+}
+  \item [NORMAL:]
+    \textit{The administrator enters the homepage and logs into his account. Then he clicks on the tap "Main Settings" and on the displayed page on the tap "Constraints". Now he has following choices:
+    \\- Under the point "Runtime constraint", he can enter a time in hours; that’s from the moment of confirmation the maximum amount of time, an algorithm may run for anonymous user
+	\\- Under the point "Upload constraint", he can enter the space in GB; that’s from the moment of confirmation the maximum amount of space of uploaded data may run for an anonymous user
+	\\- Under the point "Algorithms per user", he has two textboxes, in which he can enter the allowed number of parallel running algorithms for registered user(in the first box) and anonymous user (in the second box)
+	\\- If he clicks on the tap "Running Algorithms", he finds a list of all currently running algorithms, all algorithms in the queue and the current server workload; here he can enter the allowed number of total running algorithms, manipulate the queue order and interrupt running algorithms
+	\\After he made his changes, he can continue working.}
+  \item [WHAT CAN GO WRONG:]
+    \textit{\\1.) System overload could be overseen
+			\\2.) Settings could be set unuseful
+}
+  \item [OTHER ACTIVITIES:]
+    \textit{none}
+  \item [SYSTEM STATE ON COMPLETION:]
+    \textit{Upon clicking the return button the admin is redirected to the main page.}
+\end{description}

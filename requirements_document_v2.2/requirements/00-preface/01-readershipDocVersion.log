@@ -1,0 +1,262 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.11.10)  10 NOV 2015 18:20
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**01-readershipDocVersion.tex
+(./01-readershipDocVersion.tex
+LaTeX2e <2015/01/01>
+Babel <3.9l> and hyphenation patterns for 11 languages loaded.
+! Undefined control sequence.
+l.1 \chapter
+            {Readership}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \chapter{R
+              eadership}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no R in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no p in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--2
+[] 
+ []
+
+
+! LaTeX Error: Environment description undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \begin{description}
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4   \item [hlo]
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: \begin{document} ended by \end{description}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 \end{description}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (19.4221pt too wide) in paragraph at lines 7--9
+\OT1/cmr/m/it/10 This
+ []
+
+
+Overfull \hbox (14.96098pt too wide) in paragraph at lines 7--9
+\OT1/cmr/m/it/10 Re-
+ []
+
+
+Overfull \hbox (24.91646pt too wide) in paragraph at lines 7--9
+\OT1/cmr/m/it/10 quire-
+ []
+
+
+Overfull \hbox (21.72208pt too wide) in paragraph at lines 7--9
+\OT1/cmr/m/it/10 ment
+ []
+
+
+Overfull \hbox (20.3276pt too wide) in paragraph at lines 7--9
+\OT1/cmr/m/it/10 Doc-
+ []
+
+
+Overfull \hbox (8.94438pt too wide) in paragraph at lines 7--9
+\OT1/cmr/m/it/10 u-
+ []
+
+
+Overfull \hbox (21.72208pt too wide) in paragraph at lines 7--9
+\OT1/cmr/m/it/10 ment
+ []
+
+
+Overfull \hbox (7.15552pt too wide) in paragraph at lines 7--9
+\OT1/cmr/m/it/10 is
+ []
+
+
+Overfull \hbox (13.28879pt too wide) in paragraph at lines 7--9
+\OT1/cmr/m/it/10 de-
+ []
+
+
+Overfull \hbox (26.57759pt too wide) in paragraph at lines 7--9
+\OT1/cmr/m/it/10 signed
+ []
+
+
+Overfull \hbox (12.39436pt too wide) in paragraph at lines 7--9
+\OT1/cmr/m/it/10 for
+ []
+
+
+Overfull \hbox (13.03323pt too wide) in paragraph at lines 7--9
+\OT1/cmr/m/it/10 the
+ []
+
+
+Overfull \hbox (24.67204pt too wide) in paragraph at lines 7--9
+\OT1/cmr/m/it/10 Data-
+ []
+
+
+Overfull \hbox (32.19975pt too wide) in paragraph at lines 7--9
+\OT1/cmr/m/it/10 Science
+ []
+
+
+Overfull \hbox (37.2053pt too wide) in paragraph at lines 7--9
+\OT1/cmr/m/it/10 StartUp.
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 \%
+       section{Document Version}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no % in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+
+! LaTeX Error: Environment description undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 \begin{description}
+                        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 10--12
+[] 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12   \item [gl]
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+<argument> Version 2.0, Date: \today 
+                                     
+l.13     \textit{Version 2.0, Date: \today}
+                                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{document} ended by \end{description}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 \end{description}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+)
+! Emergency stop.
+<*> 01-readershipDocVersion.tex
+                               
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 10 strings out of 494446
+ 248 string characters out of 6172374
+ 49207 words of memory out of 5000000
+ 3362 multiletter control sequences out of 15000+600000
+ 3986 words of font info for 15 fonts, out of 8000000 for 9000
+ 452 hyphenation exceptions out of 8191
+ 13i,1n,10p,101b,81s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!
