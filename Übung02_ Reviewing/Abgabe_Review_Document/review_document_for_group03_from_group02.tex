@@ -1,0 +1,197 @@
+\documentclass{article}
+
+\title{Review Document -- Requirements Document Group 03}
+\author{Paul Fink \and Jens Henninger \and Florian Jennewein \and Daniel Maier}
+\date{\today}
+
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+This is our review of Group 03. 
+
+\section{Miscellaneous}
+
+\subsection{}
+The glossary entries are precisely.
+\subsection{}
+The UR/SR are well, clearly and completely formulated; except the negative mentioned ones.
+\subsection{}
+The scenarios are well described.
+\subsection{}
+The structure of the whole document is very well.
+\subsection{}
+A kind of documentation/help for learning administration and general use is mentioned in UR/SR(a point we’ve not mentioned).	 
+\subsection{•}
+Following entries are missing: \par -weka, smo, 
+
+ 
+\section{Problems in the requirements}
+
+\subsection{General observations}
+
+\subsubsection{}
+User Requirements are not linked to non-functional system requirements. Also some functional requirement are missing their link to a user requirement (For Example FR002)
+\subsubsection{•}
+The difference between priorities is not explained. If there were only two, A and B for example it would be clear that priority A is a must have and priority B is a nice to have. But since there are three different priorities the distinction between those three is not clear.
+
+\subsection{Requirement specific observations}
+ 
+\subsubsection{•}
+UR002: \textit{There shall be no monetarization of the software, such as advertisements.} (corresponding system requirement: NFR034)\\
+This Statement does not affect the development of the application. Furthermore UR001 already states that the finished product will be published as an open-source product, implication that there will be no monetization.
+
+\subsubsection{•}
+UR003: \textit{The language of the website shall be English.} \\
+Although this is true, the client wants the whole application to be in english. So not only the website, but also the installation process etc. shall be in English. In the corresponding system requirement this mistake is fixed:\\ 
+NFR007: \textit{The system language is English.}
+ 
+\subsubsection{•}
+UR010: \textit{The website should offer a version for mobile devices.} \\
+As far as we understood it, the website should be readable via mobile devices. There does not need to be an extra version for them. In general it seems improbable that users would want to do data mining with a mobile devices since they have very limit disk space for trainings and/or test data.
+ 
+\subsubsection{•}
+UR011: \textit{Statement The system should be accessible through a command line interface via SPARQL.}\\
+The database should be accessible via SPARQL not the whole application. Same goes for the corresponding system requirement:\\ 
+NFR009: \textit{The system should be accessible through a command line interface via SPARQL.}
+ 
+\subsubsection{•}
+UR013: \textit{The system shall run on desktop environments. Already existing server infrastructure provides 32GB of RAM and Octa-Core CPUs.}\\
+This requirement is somewhat poorly stated: “The server client will run on servers with at least 32GB of Ram and Octa-Core CPUs.”
+
+\subsubsection{•}
+Multiply times statements listed of things that will not be done. For example:\\
+UR020: \textit{The system infrastructure does not need to be redundant.} (Other statements with the same Problem: UR014, UR015, UR018, UR024(last part), UR029, UR036, NFR011, NFR027, NFR033)
+
+\subsubsection{•}
+UR021: \textit{Data sets, models and result sets shall be organized in packages which are each assigned a unique ID.}\\
+The last part about assigning unique Ids is already a design decision and should therefore not be included.
+
+\subsubsection{•}
+UR022: \textit{Package contents shall be accessible through their ID.}\\
+Same here as above. The Statement should probably be more like this:
+“Users shall be access each package respectively”
+
+\subsubsection{•}
+UR023: \textit{Different installations of the system shall be able to exchange models.}\\
+Although this is true, the requirement is suppose to be more comprehensive. Not only models, but also test data shall be exchangeable.
+
+\subsubsection{•}
+UR028: \textit{Settings chosen by a user shall be saved, independently for each user.}\\
+How else would you save it but independently?
+
+\subsubsection{•}
+UR034: \textit{The software shall save queries and results per user, so they can be accessed in the future.}\\
+What kind of queries are mentioned here? Saving all queries to the db is surely not wanted.
+
+\subsubsection{•}
+UR039: \textit{Users shall be notified when the system’s storage or memory are full.}\\
+What is the difference between system’s storage and memory? If there is none why are both mentioned?
+
+\subsubsection{•}
+UR043: \textit{The terms and conditions shall be changeable by the administrator.} (Corresponding system requirement NFR039)\\
+What terms and conditions. The terms of the registered users are not restrictable. For example their algorithm may always run indefinitely.
+
+\subsubsection{•}
+UR016, UR031, UR046\\
+These three requirements are all about adding algorithms to the application and have somehow different priorities. It seems like there was a misunderstanding, that plugins and uploaded algorithms are not the same thing, but they are. They are also not a must have but a great addition to the application. We gave it therefore priority B.
+
+\subsubsection{•}
+UR047: \textit{The implemented algorithms offered to the user shall be extensible and modifiable.}\\
+As far as we understood it, the exact opposite is the case. Already implemented algorithms shall be unchangeable.
+
+\subsubsection{•}
+UR053: \textit{The algorithms shall be executed wholly on the server.}\\
+Where else would they be executed? A somewhat unnecessary statement.
+
+\subsubsection{}
+UR057: \textit{Data sets shall be partitionable after upload.}\\
+Is this the same statement as UR044? If though it is redundant. Otherwise partitionable how and why?
+
+\subsubsection{•}
+UR061: \textit{The raw data sets shall be downloadable.}\\
+Redundant statement, already mentioned in UR037.
+
+\subsubsection{•}
+NFR012: \textit{The implemented algorithm shall include mainly classification algorithms.}\\
+What is mainly in this case? System requirements should be specific, therefore using a statement like: “80\% of the implemented algorithms should be classification algorithms” would be better. But in general this seems like a rather strange requirement, since the application will have exactly three algorithms (SMO, Random forest and J48), when it comes out and all additional algorithm must be approved by an administrator. So this seems to be a requirement for the administration and not the developer.
+
+\subsubsection{•}
+NFR013: \textit{The implemented algorithms shall also include clustering algorithms.}\\
+Same as above.
+
+\subsubsection{•}
+NFR014: \textit{The minimal system requirements demand a desktop environment or server with following specifications: i5 CPU with 8GB Ram, 500 GB storage, and a GNU/Linux operating system.}\\ And
+NFR015: \textit{The recommended system requirements for the server are as follows: Intel Xeon CPU with 32GB Ram, 2 TB storage, and a GNU/Linux operating system.}\\
+These two requirements seem to contradict each other, unless NFR014 is not meant for the server client, but for the use of the application, which would be rather strange, since the application should only require a common browser. Also mobile device tend to have hard drives with less 500GB. 8GB Ram is also a rarity.
+
+\subsubsection{•}
+NFR016: \textit{At most, two algorithms shall be executed at a time. All further requests by users must be enqueued.}\\
+Two algorithms per user or per server? As far as we understood it the administration may choose how many algorithms can run simultaneously on the server.
+
+\subsubsection{•}
+NFR017: \textit{Once a day garbage collection is triggerd to search expired guest accounts, session recordings, and shared files.}\\
+Guess in this case are anonymous users? If so there is only one account (as stated in NFR031: Unregistered users share an anonymous user account.). Otherwise you have added a fourth user group, which was not required.
+
+\subsubsection{•}
+NFR021: \textit{The system shall be available 24/7.}\\
+Directly contradicts NFR019, NRF020, NFR022, NFR023, NFR024. There is also now a problem with the priorities. Since NFR021 is a way stronger statement then the other four and therefore why harder to realize but somehow it has Priority A whereas NFR022-NFR024 only have priority B.
+
+\subsubsection{•}
+NFR037: \textit{The system shall be expendable after deployment.}\\
+First of all I am guessing it is suppose to say “expandable”. Sorry but this is a rather funny typo. This statement is greatly open for interpretation. The requirement should probably specify what parts of the system are expandable.
+
+\subsubsection{•}
+NR011: \textit{The user menu allows the user to set read and write rights for data sets, models, results or whole packages owned by them to user groups.}\\
+As far as we understood it the user may only change permission per package.
+
+\subsubsection{•}
+FR017: \textit{The system must give the opportunity of user-registration via e-mail-address, username, and password.}\\ 
+Redundant statement, already mentioned in FR004 (thou this statement has more detail)
+
+\subsubsection{•}
+F018: \textit{The system supports registered and unregistered users.}\\
+Redundant to FR004+FR005
+
+\subsubsection{•}
+FR019: \textit{Registered shall be able to store their settings made at previous logins. Unregistered users always start with default settings and changes they made are only valid for their current session.}\\
+Since there is only one anonymous account its settings must always be fix. If there are two anonymous user the system cannot differentiate between seem so if one would make change the other one would be affected by them, which is not desired.
+
+\subsubsection{•}
+Scenario 3.4: Missing what can go wrong for the unregistered user. For example his upload data may exceed the limit given by the administration and therefore the system returns an error.
+
+\section{Missing requirements/scenarios:}
+
+\subsection{•}
+There are no UR/SR concerning constraints of the maximum upload file size.
+\subsection{}
+There are no UR/SR concerning constraints of the allowed maximum number of simultaneously running algorithms per user.
+\subsection{}
+There are no scenarios for system administration.
+\subsection{}
+There are no NFR concerning WEKA or RDF.
+\subsection{}
+There are no Ethical/Legislative NFR.
+\subsection{}
+There are no UR/SR concerning userfriendly and graphical solutions. Solution shall be presented in usual formats.
+\subsection{}
+
+\section{Inconsistencies}
+
+\subsection{}
+The majority of the Environmental NFR are FR.
+\subsection{}
+FR 1-3 are NFR.
+\subsection{}
+There is no connection between NFR and UR.
+\subsection{}
+There is no structure in the order of FR.
+
+ 
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
