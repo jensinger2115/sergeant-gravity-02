@@ -25,6 +25,13 @@ Because there is no connection between our system and other ones, Sojabohne is s
 \label{Fig. 1}
 \end{figure}
 \chapter{Structural Layer}
+Obviously the most basic systemstructure is based on the Client-Server Pattern. That's because in this pattern, the server provides services, in our case mainly the appliance of data mining and machine learning algorithms on a user uploaded data. An user shall be able to access the result and the data itself from all over the world(if he has the required rights to do so) via the web application(cf. NFR017.0/NFR005.0). So we use the client-server-pattern, where the web application is the client and the server is the system, who executes the algorithms inclusive the database.\\\\\\\\
+\begin{figure}[h]
+\centering
+\includegraphics[width=9cm]{Client-Server.jpg}
+\caption{Web-application as client; with the server.}
+\label{Fig. 2}
+\end{figure} 
 \chapter{Used Patterns}
 \chapter{Interaction Layer}
 The following section attends to the interaction between the different aleready mentioned system components in different scenarios. The main task is the visualization of the data exchange with sequence-diagrams; without an exact definition of the called methods.
