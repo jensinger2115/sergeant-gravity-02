@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.2)  1 DEC 2015 18:35
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.2)  1 DEC 2015 18:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -56,35 +56,41 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-(./designtemplate.aux)
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count89
+\float@exts=\toks15
+\float@box=\box26
+\@float@everytoks=\toks16
+\@floatcapt=\box27
+) (./designtemplate.aux)
 \openout1 = `designtemplate.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+ (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count89
+\scratchcounter=\count90
 \scratchdimen=\dimen105
-\scratchbox=\box26
-\nofMPsegments=\count90
-\nofMParguments=\count91
-\everyMPshowfont=\toks15
-\MPscratchCnt=\count92
+\scratchbox=\box28
+\nofMPsegments=\count91
+\nofMParguments=\count92
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count93
 \MPscratchDim=\dimen106
-\MPnumerator=\count93
-\makeMPintoPDFobject=\count94
-\everyMPtoPDFconversion=\toks16
+\MPnumerator=\count94
+\makeMPintoPDFobject=\count95
+\everyMPtoPDFconversion=\toks18
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -134,11 +140,11 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 12.
+(Font)              <12> on input line 13.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 12.
+(Font)              <8> on input line 13.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 12.
+(Font)              <6> on input line 13.
 
 [1
 
@@ -163,13 +169,13 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 ] [2]
 Chapter 1.
 
-Overfull \hbox (148.62068pt too wide) in paragraph at lines 20--20
+Overfull \hbox (148.62068pt too wide) in paragraph at lines 21--21
 [][]\OT1/cmr/m/n/8 https://moodle.uni-mainz.de/pluginfile.php/33185/assignsubmi
 ssion[]file/submission[]files/8942/Abgabe[]Review[]Document.tar.gz| 
  []
 
 
-Overfull \hbox (6.19489pt too wide) in paragraph at lines 18--21
+Overfull \hbox (6.19489pt too wide) in paragraph at lines 19--22
 \OT1/cmr/m/n/10 er-ences to re-quire-ments are based on the sys-tem re-quire-me
 nts of our requirements-
  []
@@ -183,7 +189,7 @@ Chapter 2.
 <Context_Model.jpg, id=37, 150.5625pt x 80.3pt>
 File: Context_Model.jpg Graphic file (type jpg)
  <use Context_Model.jpg>
-Package pdftex.def Info: Context_Model.jpg used on input line 26.
+Package pdftex.def Info: Context_Model.jpg used on input line 27.
 (pdftex.def)             Requested size: 85.35826pt x 45.5264pt.
 
 [5 <./Context_Model.jpg>] [6
@@ -193,89 +199,80 @@ Chapter 3.
 <Client-Server.jpg, id=44, 471.7625pt x 100.375pt>
 File: Client-Server.jpg Graphic file (type jpg)
  <use Client-Server.jpg>
-Package pdftex.def Info: Client-Server.jpg used on input line 41.
+Package pdftex.def Info: Client-Server.jpg used on input line 42.
 (pdftex.def)             Requested size: 256.0748pt x 54.48503pt.
 
 <Overview.jpg, id=45, 883.3pt x 572.1375pt>
 File: Overview.jpg Graphic file (type jpg)
  <use Overview.jpg>
-Package pdftex.def Info: Overview.jpg used on input line 64.
+Package pdftex.def Info: Overview.jpg used on input line 65.
 (pdftex.def)             Requested size: 455.24408pt x 294.87671pt.
 
-Overfull \hbox (110.24408pt too wide) in paragraph at lines 64--65
+Overfull \hbox (110.24408pt too wide) in paragraph at lines 65--66
  [][] 
  []
 
-<User_surface.jpg, id=46, 1043.9pt x 732.7375pt>
+[7 <./Client-Server.jpg>] <User_surface.jpg, id=49, 1043.9pt x 732.7375pt>
 File: User_surface.jpg Graphic file (type jpg)
- <use User_surface.jpg>
-Package pdftex.def Info: User_surface.jpg used on input line 72.
+
+<use User_surface.jpg>
+Package pdftex.def Info: User_surface.jpg used on input line 73.
 (pdftex.def)             Requested size: 455.24408pt x 319.54324pt.
 
-Overfull \hbox (110.24408pt too wide) in paragraph at lines 72--73
+Overfull \hbox (110.24408pt too wide) in paragraph at lines 73--74
  [][] 
  []
 
-<load_surface.jpg, id=47, 1043.9pt x 732.7375pt>
+[8 <./Overview.jpg>] <load_surface.jpg, id=53, 1043.9pt x 732.7375pt>
 File: load_surface.jpg Graphic file (type jpg)
- <use load_surface.jpg>
-Package pdftex.def Info: load_surface.jpg used on input line 79.
+
+<use load_surface.jpg>
+Package pdftex.def Info: load_surface.jpg used on input line 80.
 (pdftex.def)             Requested size: 455.24408pt x 319.54324pt.
 
-Overfull \hbox (110.24408pt too wide) in paragraph at lines 79--80
+Overfull \hbox (110.24408pt too wide) in paragraph at lines 80--81
  [][] 
  []
 
-<vis_surface.jpg, id=48, 1043.9pt x 732.7375pt>
+[9 <./User_surface.jpg>] <vis_surface.jpg, id=58, 1043.9pt x 732.7375pt>
 File: vis_surface.jpg Graphic file (type jpg)
- <use vis_surface.jpg>
-Package pdftex.def Info: vis_surface.jpg used on input line 86.
+
+<use vis_surface.jpg>
+Package pdftex.def Info: vis_surface.jpg used on input line 87.
 (pdftex.def)             Requested size: 455.24408pt x 319.54324pt.
 
-Overfull \hbox (110.24408pt too wide) in paragraph at lines 86--87
+Overfull \hbox (110.24408pt too wide) in paragraph at lines 87--88
  [][] 
  []
 
-[7 <./Client-Server.jpg>]
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8 <./Overview.jpg>]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[9 <./User_surface.jpg>]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<server.jpg, id=59, 572.1375pt x 381.425pt>
+ [10 <./load_surface.jpg>] <server.jpg, id=62, 572.1375pt x 381.425pt>
 File: server.jpg Graphic file (type jpg)
  <use server.jpg>
-Package pdftex.def Info: server.jpg used on input line 94.
+Package pdftex.def Info: server.jpg used on input line 95.
 (pdftex.def)             Requested size: 284.52756pt x 189.68768pt.
 
-<reflection.png, id=60, 791.95876pt x 212.795pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11 <./vis_surface.jpg>] <reflection.png, id=66, 791.95876pt x 212.795pt>
 File: reflection.png Graphic file (type png)
- <use reflection.png>
-Package pdftex.def Info: reflection.png used on input line 102.
+
+<use reflection.png>
+Package pdftex.def Info: reflection.png used on input line 103.
 (pdftex.def)             Requested size: 426.79134pt x 114.67703pt.
 
-Overfull \hbox (81.79134pt too wide) in paragraph at lines 102--103
+Overfull \hbox (81.79134pt too wide) in paragraph at lines 103--104
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--103
+Underfull \hbox (badness 10000) in paragraph at lines 104--104
 []\OT1/cmr/m/n/10 Figure 3.7: The re-flec-tion pat-tern based on
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[10 <./load_surface.jpg>]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[11 <./vis_surface.jpg>] [12 <./server.jpg> <./reflection.png>]
+[12 <./server.jpg> <./reflection.png>]
 Chapter 4.
 [13
 
@@ -285,13 +282,13 @@ Chapter 4.
 Chapter 5.
 [15] (./designtemplate.aux) ) 
 Here is how much of TeX's memory you used:
- 1569 strings out of 493304
- 22412 string characters out of 6139871
- 84006 words of memory out of 5000000
- 5025 multiletter control sequences out of 15000+600000
+ 1628 strings out of 493304
+ 23181 string characters out of 6139871
+ 82373 words of memory out of 5000000
+ 5080 multiletter control sequences out of 15000+600000
  9460 words of font info for 33 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 37i,8n,23p,912b,224s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,8n,23p,912b,218s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
@@ -301,7 +298,7 @@ r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmsl10.pfb>
-Output written on designtemplate.pdf (19 pages, 379555 bytes).
+Output written on designtemplate.pdf (19 pages, 379643 bytes).
 PDF statistics:
  112 PDF objects out of 1000 (max. 8388607)
  72 compressed objects within 1 object stream
