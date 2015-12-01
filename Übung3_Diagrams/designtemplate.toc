@@ -2,5 +2,8 @@
 \contentsline {chapter}{\numberline {1}Introduction}{3}
 \contentsline {chapter}{\numberline {2}External Layer}{5}
 \contentsline {chapter}{\numberline {3}Structural Layer}{7}
-\contentsline {chapter}{\numberline {4}Used Patterns}{9}
-\contentsline {chapter}{\numberline {5}Interaction Layer}{11}
+\contentsline {section}{\numberline {3.1}Basic}{7}
+\contentsline {section}{\numberline {3.2}Client}{7}
+\contentsline {subsection}{\numberline {3.2.1}Server}{10}
+\contentsline {chapter}{\numberline {4}Unused Patterns}{13}
+\contentsline {chapter}{\numberline {5}Interaction Layer}{15}
