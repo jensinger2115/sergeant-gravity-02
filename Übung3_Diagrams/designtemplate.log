@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.2)  1 DEC 2015 18:43
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.2)  2 DEC 2015 13:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -63,7 +63,8 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box26
 \@float@everytoks=\toks16
 \@floatcapt=\box27
-) (./designtemplate.aux)
+)
+No file designtemplate.aux.
 \openout1 = `designtemplate.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
@@ -78,7 +79,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
- (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count90
 \scratchdimen=\dimen105
@@ -153,21 +154,20 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
 
 ]
-(./designtemplate.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 5.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 5.
-)
+No file designtemplate.toc.
 \tf@toc=\write3
 \openout3 = `designtemplate.toc'.
 
- [3] [4
+[3] [4
 
 ] [1
 
 ] [2]
 Chapter 1.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 21.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 21.
 
 Overfull \hbox (148.62068pt too wide) in paragraph at lines 21--21
 [][]\OT1/cmr/m/n/8 https://moodle.uni-mainz.de/pluginfile.php/33185/assignsubmi
@@ -186,59 +186,64 @@ nts of our requirements-
 
 ]
 Chapter 2.
-<Context_Model.jpg, id=37, 150.5625pt x 80.3pt>
-File: Context_Model.jpg Graphic file (type jpg)
- <use Context_Model.jpg>
-Package pdftex.def Info: Context_Model.jpg used on input line 27.
-(pdftex.def)             Requested size: 85.35826pt x 45.5264pt.
+<Diagrams/Context_Model.jpg, id=36, 150.5625pt x 80.3pt>
+File: Diagrams/Context_Model.jpg Graphic file (type jpg)
 
-[5 <./Context_Model.jpg>] [6
+<use Diagrams/Context_Model.jpg>
+Package pdftex.def Info: Diagrams/Context_Model.jpg used on input line 27.
+(pdftex.def)             Requested size: 85.35826pt x 45.5264pt.
+ [5 <./Diagrams/Context_Model.jpg>] [6
 
 ]
 Chapter 3.
-<Client-Server.jpg, id=44, 471.7625pt x 100.375pt>
-File: Client-Server.jpg Graphic file (type jpg)
- <use Client-Server.jpg>
-Package pdftex.def Info: Client-Server.jpg used on input line 42.
+<Diagrams/Client-Server.jpg, id=43, 471.7625pt x 100.375pt>
+File: Diagrams/Client-Server.jpg Graphic file (type jpg)
+
+<use Diagrams/Client-Server.jpg>
+Package pdftex.def Info: Diagrams/Client-Server.jpg used on input line 42.
 (pdftex.def)             Requested size: 256.0748pt x 54.48503pt.
 
-<Overview.jpg, id=45, 883.3pt x 572.1375pt>
-File: Overview.jpg Graphic file (type jpg)
- <use Overview.jpg>
-Package pdftex.def Info: Overview.jpg used on input line 65.
+<Diagrams/Overview.jpg, id=44, 883.3pt x 572.1375pt>
+File: Diagrams/Overview.jpg Graphic file (type jpg)
+
+<use Diagrams/Overview.jpg>
+Package pdftex.def Info: Diagrams/Overview.jpg used on input line 65.
 (pdftex.def)             Requested size: 455.24408pt x 294.87671pt.
 
 Overfull \hbox (110.24408pt too wide) in paragraph at lines 65--66
  [][] 
  []
 
-[7 <./Client-Server.jpg>] <User_surface.jpg, id=49, 1043.9pt x 732.7375pt>
-File: User_surface.jpg Graphic file (type jpg)
+[7 <./Diagrams/Client-Server.jpg>]
+<Diagrams/User_surface.jpg, id=48, 1043.9pt x 732.7375pt>
+File: Diagrams/User_surface.jpg Graphic file (type jpg)
 
-<use User_surface.jpg>
-Package pdftex.def Info: User_surface.jpg used on input line 73.
+<use Diagrams/User_surface.jpg>
+Package pdftex.def Info: Diagrams/User_surface.jpg used on input line 73.
 (pdftex.def)             Requested size: 455.24408pt x 319.54324pt.
 
 Overfull \hbox (110.24408pt too wide) in paragraph at lines 73--74
  [][] 
  []
 
-[8 <./Overview.jpg>] <load_surface.jpg, id=53, 1043.9pt x 732.7375pt>
-File: load_surface.jpg Graphic file (type jpg)
+[8 <./Diagrams/Overview.jpg>]
+<Diagrams/load_surface.jpg, id=52, 1043.9pt x 732.7375pt>
+File: Diagrams/load_surface.jpg Graphic file (type jpg)
 
-<use load_surface.jpg>
-Package pdftex.def Info: load_surface.jpg used on input line 80.
+<use Diagrams/load_surface.jpg>
+Package pdftex.def Info: Diagrams/load_surface.jpg used on input line 80.
 (pdftex.def)             Requested size: 455.24408pt x 319.54324pt.
 
 Overfull \hbox (110.24408pt too wide) in paragraph at lines 80--81
  [][] 
  []
 
-[9 <./User_surface.jpg>] <vis_surface.jpg, id=58, 1043.9pt x 732.7375pt>
-File: vis_surface.jpg Graphic file (type jpg)
+[9 <./Diagrams/User_surface.jpg>]
+<Diagrams/vis_surface.jpg, id=57, 1043.9pt x 732.7375pt>
+File: Diagrams/vis_surface.jpg Graphic file (type jpg)
 
-<use vis_surface.jpg>
-Package pdftex.def Info: vis_surface.jpg used on input line 87.
+<use Diagrams/vis_surface.jpg>
+Package pdftex.def Info: Diagrams/vis_surface.jpg used on input line 87.
 (pdftex.def)             Requested size: 455.24408pt x 319.54324pt.
 
 Overfull \hbox (110.24408pt too wide) in paragraph at lines 87--88
@@ -248,19 +253,22 @@ Overfull \hbox (110.24408pt too wide) in paragraph at lines 87--88
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10 <./load_surface.jpg>] <server.jpg, id=62, 572.1375pt x 381.425pt>
-File: server.jpg Graphic file (type jpg)
- <use server.jpg>
-Package pdftex.def Info: server.jpg used on input line 95.
+ [10 <./Diagrams/load_surface.jpg>] <Diagrams/server.jpg, id=61, 572.1375pt x 3
+81.425pt>
+File: Diagrams/server.jpg Graphic file (type jpg)
+
+<use Diagrams/server.jpg>
+Package pdftex.def Info: Diagrams/server.jpg used on input line 95.
 (pdftex.def)             Requested size: 284.52756pt x 189.68768pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11 <./vis_surface.jpg>] <reflection.png, id=66, 791.95876pt x 212.795pt>
-File: reflection.png Graphic file (type png)
+ [11 <./Diagrams/vis_surface.jpg>]
+<Diagrams/reflection.png, id=65, 791.95876pt x 212.795pt>
+File: Diagrams/reflection.png Graphic file (type png)
 
-<use reflection.png>
-Package pdftex.def Info: reflection.png used on input line 103.
+<use Diagrams/reflection.png>
+Package pdftex.def Info: Diagrams/reflection.png used on input line 103.
 (pdftex.def)             Requested size: 426.79134pt x 114.67703pt.
 
 Overfull \hbox (81.79134pt too wide) in paragraph at lines 103--104
@@ -272,7 +280,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 104--104
 []\OT1/cmr/m/n/10 Figure 3.7: The re-flec-tion pat-tern based on
  []
 
-[12 <./server.jpg> <./reflection.png>]
+[12 <./Diagrams/server.jpg> <./Diagrams/reflection.png>]
 Chapter 4.
 [13
 
@@ -280,28 +288,125 @@ Chapter 4.
 
 ]
 Chapter 5.
-[15] (./designtemplate.aux) ) 
+
+LaTeX Warning: File `Diagrams/Login WebSicht.jpg' not found on input line 116.
+
+<Diagrams/Login WebSicht.jpg, id=78, 595.47469pt x 285.31593pt>
+File: Diagrams/Login WebSicht.jpg Graphic file (type jpg)
+
+<use Diagrams/Login WebSicht.jpg>
+Package pdftex.def Info: Diagrams/Login WebSicht.jpg used on input line 116.
+(pdftex.def)             Requested size: 426.79134pt x 204.49129pt.
+
+Overfull \hbox (81.79134pt too wide) in paragraph at lines 116--117
+ [] 
+ []
+
+
+LaTeX Warning: File `Diagrams/Login ServerSicht.jpg' not found on input line 12
+3.
+
+<Diagrams/Login ServerSicht.jpg, id=79, 633.86812pt x 281.55188pt>
+File: Diagrams/Login ServerSicht.jpg Graphic file (type jpg)
+
+<use Diagrams/Login ServerSicht.jpg>
+Package pdftex.def Info: Diagrams/Login ServerSicht.jpg used on input line 123.
+
+(pdftex.def)             Requested size: 426.79134pt x 189.57532pt.
+
+Overfull \hbox (81.79134pt too wide) in paragraph at lines 123--124
+ [] 
+ []
+
+[15 <./Diagrams/Login WebSicht.jpg>]
+
+LaTeX Warning: File `Diagrams/test WebSicht.jpg' not found on input line 131.
+
+<Diagrams/test WebSicht.jpg, id=84, 594.72188pt x 288.3272pt>
+File: Diagrams/test WebSicht.jpg Graphic file (type jpg)
+
+<use Diagrams/test WebSicht.jpg>
+Package pdftex.def Info: Diagrams/test WebSicht.jpg used on input line 131.
+(pdftex.def)             Requested size: 426.79134pt x 206.90909pt.
+
+Overfull \hbox (81.79134pt too wide) in paragraph at lines 131--132
+ [] 
+ []
+
+
+LaTeX Warning: File `Diagrams/test ServerSicht.jpg' not found on input line 138
+.
+
+<Diagrams/test ServerSicht.jpg, id=85, 711.4078pt x 289.08pt>
+File: Diagrams/test ServerSicht.jpg Graphic file (type jpg)
+
+<use Diagrams/test ServerSicht.jpg>
+Package pdftex.def Info: Diagrams/test ServerSicht.jpg used on input line 138.
+(pdftex.def)             Requested size: 426.79134pt x 173.43169pt.
+
+Overfull \hbox (81.79134pt too wide) in paragraph at lines 138--139
+ [] 
+ []
+
+[16 <./Diagrams/Login ServerSicht.jpg> <./Diagrams/test WebSicht.jpg>]
+
+LaTeX Warning: File `Diagrams/upload WebSicht.jpg' not found on input line 146.
+
+
+<Diagrams/upload WebSicht.jpg, id=89, 813.0375pt x 431.6125pt>
+File: Diagrams/upload WebSicht.jpg Graphic file (type jpg)
+
+<use Diagrams/upload WebSicht.jpg>
+Package pdftex.def Info: Diagrams/upload WebSicht.jpg used on input line 146.
+(pdftex.def)             Requested size: 426.79134pt x 226.56702pt.
+
+Overfull \hbox (81.79134pt too wide) in paragraph at lines 146--147
+ [] 
+ []
+
+
+LaTeX Warning: File `Diagrams/upload ServerSicht.jpg' not found on input line 1
+53.
+
+<Diagrams/upload ServerSicht.jpg, id=90, 873.2625pt x 431.6125pt>
+File: Diagrams/upload ServerSicht.jpg Graphic file (type jpg)
+
+<use Diagrams/upload ServerSicht.jpg>
+Package pdftex.def Info: Diagrams/upload ServerSicht.jpg used on input line 153
+.
+(pdftex.def)             Requested size: 426.79134pt x 210.93875pt.
+
+Overfull \hbox (81.79134pt too wide) in paragraph at lines 153--154
+ [] 
+ []
+
+[17 <./Diagrams/test ServerSicht.jpg> <./Diagrams/upload WebSicht.jpg>]
+[18 <./Diagrams/upload ServerSicht.jpg>] (./designtemplate.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 1628 strings out of 493304
- 23181 string characters out of 6139871
- 82373 words of memory out of 5000000
- 5080 multiletter control sequences out of 15000+600000
+ 1658 strings out of 493304
+ 24292 string characters out of 6139871
+ 82289 words of memory out of 5000000
+ 5110 multiletter control sequences out of 15000+600000
  9460 words of font info for 33 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  37i,8n,23p,912b,218s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmsl10.pfb>
-Output written on designtemplate.pdf (19 pages, 379643 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmsl10.pfb>
+Output written on designtemplate.pdf (22 pages, 614431 bytes).
 PDF statistics:
- 112 PDF objects out of 1000 (max. 8388607)
- 72 compressed objects within 1 object stream
+ 127 PDF objects out of 1000 (max. 8388607)
+ 78 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
 
