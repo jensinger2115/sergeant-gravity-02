@@ -1,0 +1,42 @@
+\documentclass{book}
+
+\usepackage[]{graphicx}
+\usepackage[]{float}
+\usepackage[]{hyperref} 
+
+\title{Design Document}
+\author{Jens Henninger \and Daniel Maier \and Paul Fink \and Florian Jennewein}
+\date{\today}
+
+
+\begin{document}
+\frontmatter
+\maketitle
+\tableofcontents
+\mainmatter
+\part{Low-Level-Design}
+
+\chapter{Introduction}
+This design document describes the low-level-Design of the desired system 
+"Sojabohne" through class- and sequence- diagrams and also includes the basic source code of the application. 
+The whole document is based on the architectural design document: \url{"https://moodle.uni-mainz.de/pluginfile.php/33758/mod_resource/content/1/architectural_design.pdf"}
+
+\chapter{The Client-side Application}
+Because the Client server isn't implemented in java, there's no need for us to implement the client side of our application. So we focus on the server application.
+
+\chapter{The Server Application}
+\section{Complete View}
+\section{Detail View}
+\subsection{The Main Servlet}
+\subsection{The User Section}
+\subsection{The Data Section}
+\section{Used Patterns}
+\section{Resulting Source Code}
+
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
