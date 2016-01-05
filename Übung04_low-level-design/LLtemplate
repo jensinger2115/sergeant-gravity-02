@@ -26,17 +26,17 @@ Because the Client server isn't implemented in java, there's no need for us to i
 
 \chapter{The Server Application}
 \section{Complete View}
-The main idea regarding our application is that all required tasks are handled with their own handler class, which is called through a specific request and handles it with the appropriate method. As you can see in the figure we grouped the handlers in data- and user-handlers and each handler is connected with the user-/datamanager which instances allow each handler to access the database(always via manager and via SPARQL). 
+The main idea regarding our application is that all required tasks are handled with their own handler class, which is called through a specific request and handles it with the appropriate method. As you can see in the figure we grouped the handlers in data- and user-handlers and each handler is connected with the user-/datamanager which instances allow each handler to access the database(always via manager and via SPARQL). For example, the user section has classes and methods for user administration and the right system and the data section has classes for package management and  
 \section{Detail View}
 \subsection{The Main Servlet}
 \subsection{The User Section}
 \subsection{The Data Section}
 \section{Used Patterns}
 For our application, we used the following patterns:
--Whole-Part: This pattern is very important to guarantee the required modularity, reusability and a clear seperation through the use of classes, which aggregate particular objects/services. The most obvious example for this pattern is the relationship between the MainServlet and handler classes.
--Master-Slave Pattern: Although we haven't a master with more than one slave in our application but we think you can call the relationship between handler and manager classes a kind of this pattern. This grants exchangeability and extensibility.
--Command-Processor: This pattern is used in every handler through the Java prebuild HttpServlet system(HttpServletRequest class etc.). That gives our application the maximum flexibility in request processing.
--Singleton: This pattern is for some kind of stability and safety because it prevents that there's more than one instance of a specific class, which is only needed once. An example where this are the manager classes
+\textbf{Whole-Part:} This pattern is very important to guarantee the required modularity, reusability and a clear seperation through the use of classes, which aggregate particular objects/services. The most obvious example for this pattern is the relationship between the MainServlet and handler classes.\n
+\textbf{Master-Slave Pattern:} Although we haven't a master with more than one slave in our application but we think you can call the relationship between handler and manager classes a kind of this pattern. This grants exchangeability and extensibility.\n
+\textbf{Command-Processor:} This pattern is used in every handler through the Java prebuild HttpServlet system(HttpServletRequest class etc.). That gives our application the maximum flexibility in request processing.\n
+\textbf{Singleton:} This pattern is for some kind of stability and safety because it prevents that there's more than one instance of a specific class, which is only needed once. An example where this are the manager classes
 
 \section{Resulting Source Code}
 
