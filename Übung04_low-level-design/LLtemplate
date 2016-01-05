@@ -26,6 +26,7 @@ Because the Client server isn't implemented in java, there's no need for us to i
 
 \chapter{The Server Application}
 \section{Complete View}
+The main idea regarding our application is that all required tasks are handled with their own handler class, which is called through a specific request and handles it with the appropriate method. As you can see in the figure we grouped the handlers in data- and user-handlers and each handler is connected with the user-/datamanager which instances allow each handler to access the database(always via manager). 
 \section{Detail View}
 \subsection{The Main Servlet}
 \subsection{The User Section}
