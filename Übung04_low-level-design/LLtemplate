@@ -35,8 +35,8 @@ The main idea regarding our application is that all required tasks are handled w
 For our application, we used the following patterns:
 \textbf{Whole-Part: } This pattern is very important to guarantee the required modularity, reusability and a clear seperation through the use of classes, which aggregate particular objects/services. The most obvious example for this pattern is the relationship between the MainServlet and handler classes.\n
 :\textbf{Proxy: }This pattern is used for more seperation and reusability regarding the database, through our DataAccessor class, our proxy class which is the only class which is able to interact with the database.\n
-\textbf{Singleton: } This pattern is for some kind of stability and safety because it prevents that there's more than one instance of a specific class, which is only needed once. An example where this are the manager classes
-\textbf{Factory Method: } 
+\textbf{Singleton: } This pattern is for some kind of stability and safety because it prevents that there's more than one instance of a specific class, which is only needed once for example are the manager classes.
+\textbf{Factory Method: } To make the plug-in of new result formats and algorithms possible, we use this pattern in the algorithm handler and the converter. 
 \section{Resulting Source Code}
 
 
