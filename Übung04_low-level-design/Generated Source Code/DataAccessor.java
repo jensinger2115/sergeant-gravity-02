@@ -27,7 +27,7 @@ public class DataAccessor
      * @param dataID
      * @return 
      */
-    public getData ( String dataID )
+    public getData ( String dataID, String userId )
     {
         // ## Implementation preserve start class method.getData@@@@String 
         // ## Implementation preserve end class method.getData@@@@String 
@@ -38,10 +38,11 @@ public class DataAccessor
      * @param dataID
      * @return 
      */
-    public deleteData ( String dataID )
+    public Packet deleteData ( String dataID, String userId )
     {
         // ## Implementation preserve start class method.deleteData@@@@String 
         // ## Implementation preserve end class method.deleteData@@@@String 
+	
     }
     /**
      * Operation
@@ -56,6 +57,22 @@ public class DataAccessor
     }
     // ## Implementation preserve start class other.operations. 
     // ## Implementation preserve end class other.operations. 
+
+    public User load(String userId){
+
+    }
+
+    public saveU(User user){
+
+    }
+
+    public saveGroup(UserGroup group){
+
+    }
+
+    public deleteUG(String id){
+
+    }
 }
 
 // ## Implementation preserve start class closing. 
