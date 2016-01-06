@@ -1,0 +1,112 @@
+// ## Implementation preserve start class opening. 
+// ## Implementation preserve end class opening. 
+import DataManager;
+import DataAccessor;
+import Packet;
+import DataHandler;
+// ## Implementation preserve start class import. 
+// ## Implementation preserve end class import. 
+
+public class DataManager
+// ## Implementation preserve start class extends. 
+// ## Implementation preserve end class extends. 
+
+// ## Implementation preserve start class inheritence. 
+// ## Implementation preserve end class inheritence. 
+
+{
+    /** Attributes */
+    private DataManager dataManager;
+    private DataAccessor dataAccessor;
+    // ## Implementation preserve start class attributes. 
+    // ## Implementation preserve end class attributes. 
+    /** Constructor */
+    private DataManager ()
+    {
+    }
+    /**
+     * Operation
+     *
+     * @return DataManager
+     */
+    public DataManager getInstance (  )
+    {
+        // ## Implementation preserve start class method.getInstance@DataManager@@ 
+        // ## Implementation preserve end class method.getInstance@DataManager@@ 
+    }
+    /**
+     * Operation
+     *
+     * @param dataId
+     * @param userId
+     * @return Packet
+     */
+    public Packet load ( String dataId, String userId )
+    {
+        // ## Implementation preserve start class method.load@Packet@@@String@String 
+        // ## Implementation preserve end class method.load@Packet@@@String@String 
+    }
+    /**
+     * Operation
+     *
+     * @param userId
+     * @param data
+     * @return 
+     */
+    public save ( String userId, Packet data )
+    {
+        // ## Implementation preserve start class method.save@@@@String@Packet 
+        // ## Implementation preserve end class method.save@@@@String@Packet 
+    }
+    /**
+     * Operation
+     *
+     * @param data
+     * @return 
+     */
+    public modify ( Packet data )
+    {
+        // ## Implementation preserve start class method.modify@@@@Packet 
+        // ## Implementation preserve end class method.modify@@@@Packet 
+    }
+    /**
+     * Operation
+     *
+     * @param dataId
+     * @param userId
+     * @return 
+     */
+    public delete ( String dataId, String userId )
+    {
+        // ## Implementation preserve start class method.delete@@@@String@String 
+        // ## Implementation preserve end class method.delete@@@@String@String 
+    }
+    /**
+     * Operation
+     *
+     * @param userId
+     * @param dataId
+     * @param date
+     * @return 
+     */
+    public log ( String userId, String dataId, Date date )
+    {
+        // ## Implementation preserve start class method.log@@@@String@String@Date 
+        // ## Implementation preserve end class method.log@@@@String@String@Date 
+    }
+    /**
+     * Operation
+     *
+     * @return 
+     */
+    private DataManager (  )
+    {
+        // ## Implementation preserve start class method.DataManager@@@ 
+        // ## Implementation preserve end class method.DataManager@@@ 
+    }
+    // ## Implementation preserve start class other.operations. 
+    // ## Implementation preserve end class other.operations. 
+}
+
+// ## Implementation preserve start class closing. 
+// ## Implementation preserve end class closing. 
