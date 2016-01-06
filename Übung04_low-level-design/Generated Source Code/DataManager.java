@@ -17,7 +17,7 @@ public class DataManager
 {
     /** Attributes */
     private DataManager dataManager;
-    private DataAccessor dataAccessor;
+    protected DataAccessor dataAccessor;
     // ## Implementation preserve start class attributes. 
     // ## Implementation preserve end class attributes. 
     /**
