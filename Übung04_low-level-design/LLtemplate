@@ -2,6 +2,7 @@
 
 \usepackage[]{graphicx}
 \usepackage[]{float}
+\usepackage{listings}
 \usepackage[]{hyperref} 
 
 \title{Design Document}
@@ -27,10 +28,58 @@ Because the Client server isn't implemented in java, there's no need for us to i
 \chapter{The Server Application}
 \section{Complete View}
 The main idea regarding our application is that all required tasks are handled with their own handler class, which is called through a specific request and handles it with the appropriate method. As you can see in the figure we grouped the handlers in data- and user-handlers and each handler is connected with the user-/datamanager which instances allow each handler to access the database(always via manager and via SPARQL). For example, the user section has classes and methods for user administration and the right system and the data section has classes for package management and. At the top of our application stands the required Rest interface and the HttpServlet. 
+\begin{figure}[H]
+\centering
+\includegraphics[width=16cm]{Diagrams/Classdia_total_h.png}
+\caption{Whole Application}
+\label{Fig. 1}
+\end{figure}
 \section{Detail View}
 \subsection{The Main Servlet}
+\begin{figure}[H]
+\centering
+\includegraphics[width=16cm]{Diagrams/HeadSect.png}
+\caption{Application Head}
+\label{Fig. 2}
+\end{figure}
 \subsection{The User Section}
+\begin{figure}[H]
+\centering
+\includegraphics[width=16cm]{Diagrams/UserSect.png}
+\caption{User Section}
+\label{Fig. 3}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=16cm]{Diagrams/U1.png}
+\caption{Group Creation}
+\label{Fig. 4}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=16cm]{Diagrams/U2.png}
+\caption{Use of an Algorithm}
+\label{Fig. 5}
+\end{figure}
 \subsection{The Data Section}
+\begin{figure}[H]
+\centering
+\includegraphics[width=16cm]{Diagrams/DataSect.png}
+\caption{Download Data}
+\label{Fig. 6}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=16cm]{Diagrams/D1.png}
+\caption{User surface zoom}
+\label{Fig. 7}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=16cm]{Diagrams/D2.png}
+\caption{User surface zoom}
+\label{Fig. 8}
+\end{figure}
 \section{Used Patterns}
 For our application, we used the following patterns:
 \textbf{Whole-Part: } This pattern is very important to guarantee the required modularity, reusability and a clear seperation through the use of classes, which aggregate particular objects/services. The most obvious example for this pattern is the relationship between the MainServlet and handler classes.\n
@@ -38,7 +87,1583 @@ For our application, we used the following patterns:
 \textbf{Singleton: } This pattern is for some kind of stability and safety because it prevents that there's more than one instance of a specific class, which is only needed once for example are the manager classes.
 \textbf{Factory Method: } To make the plug-in of new result formats and algorithms possible, we use this pattern in the algorithm handler and the converter. 
 \section{Resulting Source Code}
+\subsection{AlgorithmHandler}
+\lstset{language=Java}
+\begin{lstlisting}
+// ## Implementation preserve start class opening. 
+// ## Implementation preserve end class opening. 
+import DataSet;
+import IAlgorithm;
+import DataHandler;
+import NewAlgorithm;
+// ## Implementation preserve start class import. 
+// ## Implementation preserve end class import. 
 
+public class AlgorithmHandler extends DataHandler
+// ## Implementation preserve start class inheritence. 
+// ## Implementation preserve end class inheritence. 
+
+{
+    /** Attributes */
+    private AlgMeta algMeta;
+    // ## Implementation preserve start class attributes. 
+    // ## Implementation preserve end class attributes. 
+    /**
+     * Operation
+     *
+     * @param req
+     * @param res
+     * @return 
+     */
+    public handle ( HttpServletRequest req, HttpServletResponse res )
+    {
+        // ## Implementation preserve start class method.handle@@@@HttpServletRequest@HttpServletResponse 
+        // ## Implementation preserve end class method.handle@@@@HttpServletRequest@HttpServletResponse 
+    }
+    /**
+     * Operation
+     *
+     * @param data
+     * @param algorithm
+     * @return 
+     */
+    public doAlg ( DataSet data, String algorithm )
+    {
+        // ## Implementation preserve start class method.doAlg@@@@DataSet@String 
+        // ## Implementation preserve end class method.doAlg@@@@DataSet@String 
+    }
+    /**
+     * Operation
+     *
+     * @return boolean
+     */
+    public boolean abort (  )
+    {
+        // ## Implementation preserve start class method.abort@boolean@@ 
+        // ## Implementation preserve end class method.abort@boolean@@ 
+    }
+    /**
+     * Operation
+     *
+     * @return IAlgorithm
+     */
+    public IAlgorithm createAlgorithm (  )
+    {
+        // ## Implementation preserve start class method.createAlgorithm@IAlgorithm@@ 
+        // ## Implementation preserve end class method.createAlgorithm@IAlgorithm@@ 
+    }
+    // ## Implementation preserve start class other.operations. 
+    // ## Implementation preserve end class other.operations. 
+}
+
+// ## Implementation preserve start class closing. 
+// ## Implementation preserve end class closing. 
+\end{lstlisting}
+\subsection{Converter}
+\lstset{language=Java}
+\begin{lstlisting}
+// ## Implementation preserve start class opening. 
+// ## Implementation preserve end class opening. 
+import Converter;
+import DataSet;
+import NewFormat;
+// ## Implementation preserve start class import. 
+// ## Implementation preserve end class import. 
+
+public class Converter
+// ## Implementation preserve start class extends. 
+// ## Implementation preserve end class extends. 
+
+// ## Implementation preserve start class inheritence. 
+// ## Implementation preserve end class inheritence. 
+
+{
+    /** Attributes */
+    private Converter converter;
+    private ConvMeta convMeta;
+    // ## Implementation preserve start class attributes. 
+    // ## Implementation preserve end class attributes. 
+    /**
+     * Operation
+     *
+     * @return Converter
+     */
+    public Converter getInstance (  )
+    {
+        // ## Implementation preserve start class method.getInstance@Converter@@ 
+        // ## Implementation preserve end class method.getInstance@Converter@@ 
+    }
+    /**
+     * Operation
+     *
+     * @param data
+     * @param format
+     * @return 
+     */
+    public convert ( DataSet data, String format )
+    {
+        // ## Implementation preserve start class method.convert@@@@DataSet@String 
+        // ## Implementation preserve end class method.convert@@@@DataSet@String 
+    }
+    /**
+     * Operation
+     *
+     * @param format
+     * @return boolean
+     */
+    public boolean isSupported ( String format )
+    {
+        // ## Implementation preserve start class method.isSupported@boolean@@@String 
+        // ## Implementation preserve end class method.isSupported@boolean@@@String 
+    }
+    /**
+     * Operation
+     *
+     * @return NewFormat
+     */
+    public NewFormat createFormat (  )
+    {
+        // ## Implementation preserve start class method.createFormat@NewFormat@@ 
+        // ## Implementation preserve end class method.createFormat@NewFormat@@ 
+    }
+    /**
+     * Operation
+     *
+     * @return 
+     */
+    private Converter (  )
+    {
+        // ## Implementation preserve start class method.Converter@@@ 
+        // ## Implementation preserve end class method.Converter@@@ 
+    }
+    // ## Implementation preserve start class other.operations. 
+    // ## Implementation preserve end class other.operations. 
+}
+
+// ## Implementation preserve start class closing. 
+// ## Implementation preserve end class closing. 
+\end{lstlisting}
+\subsection{DataAccessor}
+\lstset{language=Java}
+\begin{lstlisting}
+// ## Implementation preserve start class opening. 
+// ## Implementation preserve end class opening. 
+import Packet;
+import UserManager;
+import DataManager;
+// ## Implementation preserve start class import. 
+// ## Implementation preserve end class import. 
+
+public class DataAccessor
+// ## Implementation preserve start class extends. 
+// ## Implementation preserve end class extends. 
+
+// ## Implementation preserve start class inheritence. 
+// ## Implementation preserve end class inheritence. 
+
+{
+    // ## Implementation preserve start class attributes. 
+    // ## Implementation preserve end class attributes. 
+    /** Associations */
+    private UserManager userManager;
+    private DataManager dataManager;
+    // ## Implementation preserve start class associations. 
+    // ## Implementation preserve end class associations. 
+    /**
+     * Operation
+     *
+     * @param dataID
+     * @return 
+     */
+    public getData ( String dataID, String userId )
+    {
+        // ## Implementation preserve start class method.getData@@@@String 
+        // ## Implementation preserve end class method.getData@@@@String 
+    }
+    /**
+     * Operation
+     *
+     * @param dataID
+     * @return 
+     */
+    public Packet deleteData ( String dataID, String userId )
+    {
+        // ## Implementation preserve start class method.deleteData@@@@String 
+        // ## Implementation preserve end class method.deleteData@@@@String 
+	
+    }
+    /**
+     * Operation
+     *
+     * @param packet
+     * @return 
+     */
+    public saveData ( Packet packet )
+    {
+        // ## Implementation preserve start class method.saveData@@@@Packet 
+        // ## Implementation preserve end class method.saveData@@@@Packet 
+    }
+    // ## Implementation preserve start class other.operations. 
+    // ## Implementation preserve end class other.operations. 
+
+    public User load(String userId){
+
+    }
+
+    public saveU(User user){
+
+    }
+
+    public saveGroup(UserGroup group){
+
+    }
+
+    public deleteUG(String id){
+
+    }
+}
+
+// ## Implementation preserve start class closing. 
+// ## Implementation preserve end class closing. 
+\end{lstlisting}
+\subsection{DataHandler}
+\lstset{language=Java}
+\begin{lstlisting}
+// ## Implementation preserve start class opening. 
+// ## Implementation preserve end class opening. 
+import DataManager;
+import Converter;
+import ReqHandler;
+// ## Implementation preserve start class import. 
+// ## Implementation preserve end class import. 
+
+public class DataHandler
+// ## Implementation preserve start class extends. 
+// ## Implementation preserve end class extends. 
+ implements ReqHandler
+// ## Implementation preserve start class inheritence. 
+// ## Implementation preserve end class inheritence. 
+
+{
+    /** Attributes */
+    protected DataManager dataManager;
+    protected Converter converter;
+    // ## Implementation preserve start class attributes. 
+    // ## Implementation preserve end class attributes. 
+    // ## Implementation preserve start class other.operations. 
+    // ## Implementation preserve end class other.operations. 
+}
+
+// ## Implementation preserve start class closing. 
+// ## Implementation preserve end class closing. 
+\end{lstlisting}
+\subsection{DataManager}
+\lstset{language=Java}
+\begin{lstlisting}
+// ## Implementation preserve start class opening. 
+// ## Implementation preserve end class opening. 
+import DataManager;
+import DataAccessor;
+import Packet;
+import DataHandler;
+// ## Implementation preserve start class import. 
+// ## Implementation preserve end class import. 
+
+public class DataManager
+// ## Implementation preserve start class extends. 
+// ## Implementation preserve end class extends. 
+
+// ## Implementation preserve start class inheritence. 
+// ## Implementation preserve end class inheritence. 
+
+{
+    /** Attributes */
+    private DataManager dataManager;
+    protected DataAccessor dataAccessor;
+    // ## Implementation preserve start class attributes. 
+    // ## Implementation preserve end class attributes. 
+    /**
+     * Operation
+     *
+     * @return DataManager
+     */
+    public DataManager getInstance (  )
+    {
+        // ## Implementation preserve start class method.getInstance@DataManager@@ 
+        // ## Implementation preserve end class method.getInstance@DataManager@@ 
+    }
+    /**
+     * Operation
+     *
+     * @param dataId
+     * @param userId
+     * @return Packet
+     */
+    public Packet load ( String dataId, String userId )
+    {
+        // ## Implementation preserve start class method.load@Packet@@@String@String 
+        // ## Implementation preserve end class method.load@Packet@@@String@String 
+    }
+    /**
+     * Operation
+     *
+     * @param userId
+     * @param data
+     * @return 
+     */
+    public save ( String userId, Packet data )
+    {
+        // ## Implementation preserve start class method.save@@@@String@Packet 
+        // ## Implementation preserve end class method.save@@@@String@Packet 
+    }
+    /**
+     * Operation
+     *
+     * @param data
+     * @return 
+     */
+    public modify ( Packet data )
+    {
+        // ## Implementation preserve start class method.modify@@@@Packet 
+        // ## Implementation preserve end class method.modify@@@@Packet 
+    }
+    /**
+     * Operation
+     *
+     * @param dataId
+     * @param userId
+     * @return 
+     */
+    public delete ( String dataId, String userId )
+    {
+        // ## Implementation preserve start class method.delete@@@@String@String 
+        // ## Implementation preserve end class method.delete@@@@String@String 
+    }
+    /**
+     * Operation
+     *
+     * @param userId
+     * @param dataId
+     * @param date
+     * @return 
+     */
+    public log ( String userId, String dataId, Date date )
+    {
+        // ## Implementation preserve start class method.log@@@@String@String@Date 
+        // ## Implementation preserve end class method.log@@@@String@String@Date 
+    }
+    /**
+     * Operation
+     *
+     * @return 
+     */
+    private DataManager (  )
+    {
+        // ## Implementation preserve start class method.DataManager@@@ 
+        // ## Implementation preserve end class method.DataManager@@@ 
+    }
+    // ## Implementation preserve start class other.operations. 
+    // ## Implementation preserve end class other.operations. 
+}
+
+// ## Implementation preserve start class closing. 
+// ## Implementation preserve end class closing. 
+\end{lstlisting}
+\subsection{DataSet}
+\lstset{language=Java}
+\begin{lstlisting}
+// ## Implementation preserve start class opening. 
+// ## Implementation preserve end class opening. 
+import Packet;
+// ## Implementation preserve start class import. 
+// ## Implementation preserve end class import. 
+
+public class DataSet
+// ## Implementation preserve start class extends. 
+// ## Implementation preserve end class extends. 
+
+// ## Implementation preserve start class inheritence. 
+// ## Implementation preserve end class inheritence. 
+
+{
+    /** Attributes */
+    public String dataId;
+    public Byte[] data;
+    public String format;
+    public DataType type;
+    // ## Implementation preserve start class attributes. 
+    // ## Implementation preserve end class attributes. 
+    // ## Implementation preserve start class other.operations. 
+    // ## Implementation preserve end class other.operations. 
+}
+
+// ## Implementation preserve start class closing. 
+// ## Implementation preserve end class closing. 
+\end{lstlisting}
+\subsection{DeleteHandler}
+\lstset{language=Java}
+\begin{lstlisting}
+// ## Implementation preserve start class opening. 
+// ## Implementation preserve end class opening. 
+import DataHandler;
+// ## Implementation preserve start class import. 
+// ## Implementation preserve end class import. 
+
+public class DeleteHandler extends DataHandler
+// ## Implementation preserve start class inheritence. 
+// ## Implementation preserve end class inheritence. 
+
+{
+    // ## Implementation preserve start class attributes. 
+    // ## Implementation preserve end class attributes. 
+    // ## Implementation preserve start class associations. 
+    // ## Implementation preserve end class associations. 
+    /**
+     * Operation
+     *
+     * @param req
+     * @param res
+     * @return 
+     */
+    public handle ( HttpServletRequest req, HttpServletResponse res )
+    {
+        // ## Implementation preserve start class method.handle@@@@HttpServletRequest@HttpServletResponse 
+        // ## Implementation preserve end class method.handle@@@@HttpServletRequest@HttpServletResponse 
+    }
+    /**
+     * Operation
+     *
+     * @param dataId
+     * @param userId
+     * @return 
+     */
+    public delete ( String dataId, String userId )
+    {
+        // ## Implementation preserve start class method.delete@@@@String@String 
+        // ## Implementation preserve end class method.delete@@@@String@String 
+    }
+    // ## Implementation preserve start class other.operations. 
+    // ## Implementation preserve end class other.operations. 
+}
+
+// ## Implementation preserve start class closing. 
+// ## Implementation preserve end class closing. 
+\end{lstlisting}
+\subsection{DeleteUserHandler}
+\lstset{language=Java}
+\begin{lstlisting}
+// ## Implementation preserve start class opening. 
+// ## Implementation preserve end class opening. 
+import UserHandler;
+// ## Implementation preserve start class import. 
+// ## Implementation preserve end class import. 
+
+public class DeleteUserHandler extends UserHandler
+// ## Implementation preserve start class inheritence. 
+// ## Implementation preserve end class inheritence. 
+
+{
+    // ## Implementation preserve start class attributes. 
+    // ## Implementation preserve end class attributes. 
+    // ## Implementation preserve start class associations. 
+    // ## Implementation preserve end class associations. 
+    /**
+     * Operation
+     *
+     * @param req
+     * @param res
+     * @return 
+     */
+    public handle ( HttpServletRequest req, HttpServletResponse res )
+    {
+        // ## Implementation preserve start class method.handle@@@@HttpServletRequest@HttpServletResponse 
+        // ## Implementation preserve end class method.handle@@@@HttpServletRequest@HttpServletResponse 
+    }
+    /**
+     * Operation
+     *
+     * @param userId
+     * @param password
+     * @return 
+     */
+    public delete ( String userId, String password )
+    {
+        // ## Implementation preserve start class method.delete@@@@String@String 
+        // ## Implementation preserve end class method.delete@@@@String@String 
+    }
+    // ## Implementation preserve start class other.operations. 
+    // ## Implementation preserve end class other.operations. 
+}
+
+// ## Implementation preserve start class closing. 
+// ## Implementation preserve end class closing. 
+\end{lstlisting}
+\subsection{DownloadHandler}
+\lstset{language=Java}
+\begin{lstlisting}
+// ## Implementation preserve start class opening. 
+// ## Implementation preserve end class opening. 
+import DataSet;
+import DataHandler;
+// ## Implementation preserve start class import. 
+// ## Implementation preserve end class import. 
+
+public class DownloadHandler extends DataHandler
+// ## Implementation preserve start class inheritence. 
+// ## Implementation preserve end class inheritence. 
+
+{
+    // ## Implementation preserve start class attributes. 
+    // ## Implementation preserve end class attributes. 
+    // ## Implementation preserve start class associations. 
+    // ## Implementation preserve end class associations. 
+    /**
+     * Operation
+     *
+     * @param req
+     * @param res
+     * @return 
+     */
+    public handle ( HttpServletRequest req, HttpServletResponse res )
+    {
+        // ## Implementation preserve start class method.handle@@@@HttpServletRequest@HttpServletResponse 
+        // ## Implementation preserve end class method.handle@@@@HttpServletRequest@HttpServletResponse 
+    }
+    /**
+     * Operation
+     *
+     * @param data
+     * @return 
+     */
+    public download ( DataSet data )
+    {
+        // ## Implementation preserve start class method.download@@@@DataSet 
+        // ## Implementation preserve end class method.download@@@@DataSet 
+    }
+    // ## Implementation preserve start class other.operations. 
+    // ## Implementation preserve end class other.operations. 
+}
+
+// ## Implementation preserve start class closing. 
+// ## Implementation preserve end class closing. 
+\end{lstlisting}
+\subsection{HttpServlet}
+\lstset{language=Java}
+\begin{lstlisting}
+// ## Implementation preserve start class opening. 
+// ## Implementation preserve end class opening. 
+// ## Implementation preserve start class import. 
+// ## Implementation preserve end class import. 
+
+public class HttpServlet
+// ## Implementation preserve start class extends. 
+// ## Implementation preserve end class extends. 
+
+// ## Implementation preserve start class inheritence. 
+// ## Implementation preserve end class inheritence. 
+
+{
+    // ## Implementation preserve start class attributes. 
+    // ## Implementation preserve end class attributes. 
+    // ## Implementation preserve start class associations. 
+    // ## Implementation preserve end class associations. 
+    /**
+     * Operation
+     *
+     * @param req
+     * @param res
+     * @return 
+     */
+    public doGet ( HttpServletRequest req, HttpServletResponse res )
+    {
+        // ## Implementation preserve start class method.doGet@@@@HttpServletRequest@HttpServletResponse 
+        // ## Implementation preserve end class method.doGet@@@@HttpServletRequest@HttpServletResponse 
+    }
+    /**
+     * Operation
+     *
+     * @param req
+     * @param res
+     * @return 
+     */
+    public doPost ( HttpServletRequest req, HttpServletResponse res )
+    {
+        // ## Implementation preserve start class method.doPost@@@@HttpServletRequest@HttpServletResponse 
+        // ## Implementation preserve end class method.doPost@@@@HttpServletRequest@HttpServletResponse 
+    }
+    // ## Implementation preserve start class other.operations. 
+    // ## Implementation preserve end class other.operations. 
+}
+
+// ## Implementation preserve start class closing. 
+// ## Implementation preserve end class closing. 
+\end{lstlisting}
+\subsection{IAlgorithm}
+\lstset{language=Java}
+\begin{lstlisting}
+// ## Implementation preserve start class opening. 
+// ## Implementation preserve end class opening. 
+import DataSet;
+// ## Implementation preserve start class import. 
+// ## Implementation preserve end class import. 
+
+public interface IAlgorithm
+// ## Implementation preserve start class extends. 
+// ## Implementation preserve end class extends. 
+
+// ## Implementation preserve start class inheritence. 
+// ## Implementation preserve end class inheritence. 
+
+{
+    // ## Implementation preserve start class associations. 
+    // ## Implementation preserve end class associations. 
+    /**
+     * Operation
+     *
+     * @param data
+     * @return DataSet
+     */
+    public DataSet calculate ( DataSet data );
+}
+
+// ## Implementation preserve start class closing. 
+// ## Implementation preserve end class closing. 
+\end{lstlisting}
+\subsection{IFormat}
+\lstset{language=Java}
+\begin{lstlisting}
+// ## Implementation preserve start class opening. 
+// ## Implementation preserve end class opening. 
+import DataSet;
+// ## Implementation preserve start class import. 
+// ## Implementation preserve end class import. 
+
+public class IFormat
+// ## Implementation preserve start class extends. 
+// ## Implementation preserve end class extends. 
+
+// ## Implementation preserve start class inheritence. 
+// ## Implementation preserve end class inheritence. 
+
+{
+    /** Attributes */
+    private String name;
+    // ## Implementation preserve start class attributes. 
+    // ## Implementation preserve end class attributes. 
+    // ## Implementation preserve start class associations. 
+    // ## Implementation preserve end class associations. 
+    /**
+     * Operation
+     *
+     * @param data
+     * @return 
+     */
+    public convert ( DataSet data )
+    {
+        // ## Implementation preserve start class method.convert@@@@DataSet 
+        // ## Implementation preserve end class method.convert@@@@DataSet 
+    }
+    // ## Implementation preserve start class other.operations. 
+    // ## Implementation preserve end class other.operations. 
+}
+
+// ## Implementation preserve start class closing. 
+// ## Implementation preserve end class closing. 
+\end{lstlisting}
+\subsection{LoginHandler}
+\lstset{language=Java}
+\begin{lstlisting}
+// ## Implementation preserve start class opening. 
+// ## Implementation preserve end class opening. 
+import UserHandler;
+// ## Implementation preserve start class import. 
+// ## Implementation preserve end class import. 
+
+public class LoginHandler extends UserHandler
+// ## Implementation preserve start class inheritence. 
+// ## Implementation preserve end class inheritence. 
+
+{
+    // ## Implementation preserve start class attributes. 
+    // ## Implementation preserve end class attributes. 
+    // ## Implementation preserve start class associations. 
+    // ## Implementation preserve end class associations. 
+    /**
+     * Operation
+     *
+     * @param req
+     * @param res
+     * @return 
+     */
+    public handle ( HttpServletRequest req, HttpServletResponse res )
+    {
+        // ## Implementation preserve start class method.handle@@@@HttpServletRequest@HttpServletResponse 
+        // ## Implementation preserve end class method.handle@@@@HttpServletRequest@HttpServletResponse 
+    }
+    /**
+     * Operation
+     *
+     * @param userId
+     * @param password
+     * @return 
+     */
+    public login ( String userId, String password )
+    {
+        // ## Implementation preserve start class method.login@@@@String@String 
+        // ## Implementation preserve end class method.login@@@@String@String 
+    }
+    // ## Implementation preserve start class other.operations. 
+    // ## Implementation preserve end class other.operations. 
+}
+
+// ## Implementation preserve start class closing. 
+// ## Implementation preserve end class closing. 
+\end{lstlisting}
+\subsection{LogoutHandler}
+\lstset{language=Java}
+\begin{lstlisting}
+// ## Implementation preserve start class opening. 
+// ## Implementation preserve end class opening. 
+import UserHandler;
+// ## Implementation preserve start class import. 
+// ## Implementation preserve end class import. 
+
+public class LogoutHandler extends UserHandler
+// ## Implementation preserve start class inheritence. 
+// ## Implementation preserve end class inheritence. 
+
+{
+    // ## Implementation preserve start class attributes. 
+    // ## Implementation preserve end class attributes. 
+    // ## Implementation preserve start class associations. 
+    // ## Implementation preserve end class associations. 
+    /**
+     * Operation
+     *
+     * @param req
+     * @param res
+     * @return 
+     */
+    public handle ( HttpServletRequest req, HttpServletResponse res )
+    {
+        // ## Implementation preserve start class method.handle@@@@HttpServletRequest@HttpServletResponse 
+        // ## Implementation preserve end class method.handle@@@@HttpServletRequest@HttpServletResponse 
+    }
+    /**
+     * Operation
+     *
+     * @param session
+     * @return 
+     */
+    public logout ( HttpSession session )
+    {
+        // ## Implementation preserve start class method.logout@@@@HttpSession 
+        // ## Implementation preserve end class method.logout@@@@HttpSession 
+    }
+    // ## Implementation preserve start class other.operations. 
+    // ## Implementation preserve end class other.operations. 
+}
+
+// ## Implementation preserve start class closing. 
+// ## Implementation preserve end class closing. 
+\end{lstlisting}
+\subsection{MainServlet}
+\lstset{language=Java}
+\begin{lstlisting}
+// ## Implementation preserve start class opening. 
+// ## Implementation preserve end class opening. 
+import ReqHandler;
+import HttpServlet;
+// ## Implementation preserve start class import. 
+// ## Implementation preserve end class import. 
+
+public class MainServlet extends HttpServlet
+// ## Implementation preserve start class inheritence. 
+// ## Implementation preserve end class inheritence. 
+
+{
+    /** Attributes */
+    private HashMap<String,ReqHandler> handlers;
+    // ## Implementation preserve start class attributes. 
+    // ## Implementation preserve end class attributes. 
+    // ## Implementation preserve start class associations. 
+    // ## Implementation preserve end class associations. 
+    /**
+     * Operation
+     *
+     * @param req
+     * @param res
+     * @return 
+     */
+    public doGet ( HttpServletRequest req, HttpServletResponse res )
+    {
+        // ## Implementation preserve start class method.doGet@@@@HttpServletRequest@HttpServletResponse 
+        // ## Implementation preserve end class method.doGet@@@@HttpServletRequest@HttpServletResponse 
+    }
+    /**
+     * Operation
+     *
+     * @param req
+     * @param res
+     * @return 
+     */
+    public doPost ( HttpServletRequest req, HttpServletResponse res )
+    {
+        // ## Implementation preserve start class method.doPost@@@@HttpServletRequest@HttpServletResponse 
+        // ## Implementation preserve end class method.doPost@@@@HttpServletRequest@HttpServletResponse 
+    }
+    /**
+     * Operation
+     *
+     * @param id
+     * @param handler
+     * @return 
+     */
+    public addReqHandler ( String id, ReqHandler handler )
+    {
+        // ## Implementation preserve start class method.addReqHandler@@@@String@ReqHandler 
+        // ## Implementation preserve end class method.addReqHandler@@@@String@ReqHandler 
+    }
+    /**
+     * Operation
+     *
+     * @param id
+     * @param handler
+     * @return 
+     */
+    public removeReqHandler ( String id, ReqHandler handler )
+    {
+        // ## Implementation preserve start class method.removeReqHandler@@@@String@ReqHandler 
+        // ## Implementation preserve end class method.removeReqHandler@@@@String@ReqHandler 
+    }
+    /**
+     * Operation
+     *
+     * @return 
+     */
+    public removeAll (  )
+    {
+        // ## Implementation preserve start class method.removeAll@@@ 
+        // ## Implementation preserve end class method.removeAll@@@ 
+    }
+    /**
+     * Operation
+     *
+     * @param req
+     * @param res
+     * @return 
+     */
+    public doDelete ( HttpServletRequest req, HttpServletResponse res )
+    {
+        // ## Implementation preserve start class method.doDelete@@@@HttpServletRequest@HttpServletResponse 
+        // ## Implementation preserve end class method.doDelete@@@@HttpServletRequest@HttpServletResponse 
+    }
+    // ## Implementation preserve start class other.operations. 
+    // ## Implementation preserve end class other.operations. 
+}
+
+// ## Implementation preserve start class closing. 
+// ## Implementation preserve end class closing. 
+\end{lstlisting}
+\subsection{Model}
+\lstset{language=Java}
+\begin{lstlisting}
+// ## Implementation preserve start class opening. 
+// ## Implementation preserve end class opening. 
+// ## Implementation preserve start class import. 
+// ## Implementation preserve end class import. 
+
+public class Model
+// ## Implementation preserve start class extends. 
+// ## Implementation preserve end class extends. 
+
+// ## Implementation preserve start class inheritence. 
+// ## Implementation preserve end class inheritence. 
+
+{
+    /** Attributes */
+    public Set<String> solution;
+    public String modelId;
+    // ## Implementation preserve start class attributes. 
+    // ## Implementation preserve end class attributes. 
+    // ## Implementation preserve start class associations. 
+    // ## Implementation preserve end class associations. 
+    // ## Implementation preserve start class other.operations. 
+    // ## Implementation preserve end class other.operations. 
+}
+
+// ## Implementation preserve start class closing. 
+// ## Implementation preserve end class closing. 
+\end{lstlisting}
+\subsection{NewAlgorithm}
+\lstset{language=Java}
+\begin{lstlisting}
+// ## Implementation preserve start class opening. 
+// ## Implementation preserve end class opening. 
+import DataSet;
+import IAlgorithm;
+// ## Implementation preserve start class import. 
+// ## Implementation preserve end class import. 
+
+public class NewAlgorithm
+// ## Implementation preserve start class extends. 
+// ## Implementation preserve end class extends. 
+ implements IAlgorithm
+// ## Implementation preserve start class inheritence. 
+// ## Implementation preserve end class inheritence. 
+
+{
+    // ## Implementation preserve start class attributes. 
+    // ## Implementation preserve end class attributes. 
+    // ## Implementation preserve start class associations. 
+    // ## Implementation preserve end class associations. 
+    /**
+     * Operation
+     *
+     * @param data
+     * @return DataSet
+     */
+    public DataSet calculate ( DataSet data )
+    {
+        // ## Implementation preserve start class method.calculate@DataSet@@@DataSet 
+        // ## Implementation preserve end class method.calculate@DataSet@@@DataSet 
+    }
+    // ## Implementation preserve start class other.operations. 
+    // ## Implementation preserve end class other.operations. 
+}
+
+// ## Implementation preserve start class closing. 
+// ## Implementation preserve end class closing. 
+\end{lstlisting}
+\subsection{NewFormat}
+\lstset{language=Java}
+\begin{lstlisting}
+// ## Implementation preserve start class opening. 
+// ## Implementation preserve end class opening. 
+import DataSet;
+import IFormat;
+// ## Implementation preserve start class import. 
+// ## Implementation preserve end class import. 
+
+public class NewFormat extends IFormat
+// ## Implementation preserve start class inheritence. 
+// ## Implementation preserve end class inheritence. 
+
+{
+    /** Attributes */
+    public String name;
+    // ## Implementation preserve start class attributes. 
+    // ## Implementation preserve end class attributes. 
+    // ## Implementation preserve start class associations. 
+    // ## Implementation preserve end class associations. 
+    /**
+     * Operation
+     *
+     * @param data
+     * @return 
+     */
+    public convert ( DataSet data )
+    {
+        // ## Implementation preserve start class method.convert@@@@DataSet 
+        // ## Implementation preserve end class method.convert@@@@DataSet 
+    }
+    // ## Implementation preserve start class other.operations. 
+    // ## Implementation preserve end class other.operations. 
+}
+
+// ## Implementation preserve start class closing. 
+// ## Implementation preserve end class closing. 
+\end{lstlisting}
+\subsection{Packet}
+\lstset{language=Java}
+\begin{lstlisting}
+// ## Implementation preserve start class opening. 
+// ## Implementation preserve end class opening. 
+import Model;
+// ## Implementation preserve start class import. 
+// ## Implementation preserve end class import. 
+
+public class Packet
+// ## Implementation preserve start class extends. 
+// ## Implementation preserve end class extends. 
+
+// ## Implementation preserve start class inheritence. 
+// ## Implementation preserve end class inheritence. 
+
+{
+    /** Attributes */
+    public String packetID;
+    public Permission rights;
+    public String ownerId;
+    public String groupId;
+    public Set<String> annotations;
+    public DataSet[] dataSetArray;
+    public T testData;
+    public Model[] modelArray;
+    // ## Implementation preserve start class attributes. 
+    // ## Implementation preserve end class attributes. 
+    // ## Implementation preserve start class other.operations. 
+    // ## Implementation preserve end class other.operations. 
+}
+
+// ## Implementation preserve start class closing. 
+// ## Implementation preserve end class closing. 
+\end{lstlisting}
+\subsection{RegistrationHandler}
+\lstset{language=Java}
+\begin{lstlisting}
+// ## Implementation preserve start class opening. 
+// ## Implementation preserve end class opening. 
+import UserHandler;
+// ## Implementation preserve start class import. 
+// ## Implementation preserve end class import. 
+
+public class RegistrationHandler extends UserHandler
+// ## Implementation preserve start class inheritence. 
+// ## Implementation preserve end class inheritence. 
+
+{
+    // ## Implementation preserve start class attributes. 
+    // ## Implementation preserve end class attributes. 
+    // ## Implementation preserve start class associations. 
+    // ## Implementation preserve end class associations. 
+    /**
+     * Operation
+     *
+     * @param req
+     * @param res
+     * @return 
+     */
+    public handle ( HttpServletRequest req, HttpServletResponse res )
+    {
+        // ## Implementation preserve start class method.handle@@@@HttpServletRequest@HttpServletResponse 
+        // ## Implementation preserve end class method.handle@@@@HttpServletRequest@HttpServletResponse 
+    }
+    /**
+     * Operation
+     *
+     * @param email
+     * @param userId
+     * @param password
+     * @return 
+     */
+    public register ( String email, String userId, String password )
+    {
+        // ## Implementation preserve start class method.register@@@@String@String@String 
+        // ## Implementation preserve end class method.register@@@@String@String@String 
+    }
+    // ## Implementation preserve start class other.operations. 
+    // ## Implementation preserve end class other.operations. 
+}
+
+// ## Implementation preserve start class closing. 
+// ## Implementation preserve end class closing. 
+\end{lstlisting}
+\subsection{ReqHandler}
+\lstset{language=Java}
+\begin{lstlisting}
+// ## Implementation preserve start class opening. 
+// ## Implementation preserve end class opening. 
+import MainServlet;
+// ## Implementation preserve start class import. 
+// ## Implementation preserve end class import. 
+
+public interface ReqHandler
+// ## Implementation preserve start class extends. 
+// ## Implementation preserve end class extends. 
+
+// ## Implementation preserve start class inheritence. 
+// ## Implementation preserve end class inheritence. 
+
+{
+    /**
+     * Operation
+     *
+     * @param req
+     * @param res
+     * @return 
+     */
+    public handle ( HttpServletRequest req, HttpServletResponse res );
+}
+
+// ## Implementation preserve start class closing. 
+// ## Implementation preserve end class closing. 
+\end{lstlisting}
+\subsection{RestHandler}
+\lstset{language=Java}
+\begin{lstlisting}
+// ## Implementation preserve start class opening. 
+// ## Implementation preserve end class opening. 
+import MainServlet;
+// ## Implementation preserve start class import. 
+// ## Implementation preserve end class import. 
+
+public class RestHandler
+// ## Implementation preserve start class extends. 
+// ## Implementation preserve end class extends. 
+
+// ## Implementation preserve start class inheritence. 
+// ## Implementation preserve end class inheritence. 
+
+{
+    /** Attributes */
+    private MainServlet mainServlet;
+    // ## Implementation preserve start class attributes. 
+    // ## Implementation preserve end class attributes.  
+    /**
+     * Operation
+     *
+     * @param req
+     * @param res
+     * @return 
+     */
+    public get ( HttpServletRequest req, HttpServletResponse res )
+    {
+        // ## Implementation preserve start class method.get@@@@HttpServletRequest@HttpServletResponse 
+        // ## Implementation preserve end class method.get@@@@HttpServletRequest@HttpServletResponse 
+    }
+    /**
+     * Operation
+     *
+     * @param req
+     * @param res
+     * @return 
+     */
+    public post ( HttpServletRequest req, HttpServletResponse res )
+    {
+        // ## Implementation preserve start class method.post@@@@HttpServletRequest@HttpServletResponse 
+        // ## Implementation preserve end class method.post@@@@HttpServletRequest@HttpServletResponse 
+    }
+    /**
+     * Operation
+     *
+     * @param req
+     * @param res
+     * @return 
+     */
+    public delete ( HttpServletRequest req, HttpServletResponse res )
+    {
+        // ## Implementation preserve start class method.delete@@@@HttpServletRequest@HttpServletResponse 
+        // ## Implementation preserve end class method.delete@@@@HttpServletRequest@HttpServletResponse 
+    }
+    /**
+     * Operation
+     *
+     * @return HttpServletResponse
+     */
+    public HttpServletResponse response (  )
+    {
+        // ## Implementation preserve start class method.response@HttpServletResponse@@ 
+        // ## Implementation preserve end class method.response@HttpServletResponse@@ 
+    }
+    // ## Implementation preserve start class other.operations. 
+    // ## Implementation preserve end class other.operations. 
+}
+
+// ## Implementation preserve start class closing. 
+// ## Implementation preserve end class closing. 
+\end{lstlisting}
+\subsection{SearchUserHandler}
+\lstset{language=Java}
+\begin{lstlisting}
+// ## Implementation preserve start class opening. 
+// ## Implementation preserve end class opening. 
+import UserHandler;
+// ## Implementation preserve start class import. 
+// ## Implementation preserve end class import. 
+
+public class SearchUserHandler extends UserHandler
+// ## Implementation preserve start class inheritence. 
+// ## Implementation preserve end class inheritence. 
+
+{
+    // ## Implementation preserve start class attributes. 
+    // ## Implementation preserve end class attributes. 
+    // ## Implementation preserve start class associations. 
+    // ## Implementation preserve end class associations. 
+    /**
+     * Operation
+     *
+     * @param req
+     * @param res
+     * @return 
+     */
+    public handle ( HttpServletRequest req, HttpServletResponse res )
+    {
+        // ## Implementation preserve start class method.handle@@@@HttpServletRequest@HttpServletResponse 
+        // ## Implementation preserve end class method.handle@@@@HttpServletRequest@HttpServletResponse 
+    }
+    /**
+     * Operation
+     *
+     * @param userId
+     * @return 
+     */
+    public search ( String userId )
+    {
+        // ## Implementation preserve start class method.search@@@@String 
+        // ## Implementation preserve end class method.search@@@@String 
+    }
+    // ## Implementation preserve start class other.operations. 
+    // ## Implementation preserve end class other.operations. 
+}
+
+// ## Implementation preserve start class closing. 
+// ## Implementation preserve end class closing. 
+\end{lstlisting}
+\subsection{UploadHandler}
+\lstset{language=Java}
+\begin{lstlisting}
+// ## Implementation preserve start class opening. 
+// ## Implementation preserve end class opening. 
+import DataSet;
+import DataHandler;
+// ## Implementation preserve start class import. 
+// ## Implementation preserve end class import. 
+
+public class UploadHandler extends DataHandler
+// ## Implementation preserve start class inheritence. 
+// ## Implementation preserve end class inheritence. 
+
+{
+    // ## Implementation preserve start class attributes. 
+    // ## Implementation preserve end class attributes. 
+    // ## Implementation preserve start class associations. 
+    // ## Implementation preserve end class associations. 
+    /**
+     * Operation
+     *
+     * @param req
+     * @param res
+     * @return 
+     */
+    public handle ( HttpServletRequest req, HttpServletResponse res )
+    {
+        // ## Implementation preserve start class method.handle@@@@HttpServletRequest@HttpServletResponse 
+        // ## Implementation preserve end class method.handle@@@@HttpServletRequest@HttpServletResponse 
+    }
+    /**
+     * Operation
+     *
+     * @param userId
+     * @param data
+     * @return 
+     */
+    public upload ( String userId, DataSet data )
+    {
+        // ## Implementation preserve start class method.upload@@@@String@DataSet 
+        // ## Implementation preserve end class method.upload@@@@String@DataSet 
+    }
+    // ## Implementation preserve start class other.operations. 
+    // ## Implementation preserve end class other.operations. 
+}
+
+// ## Implementation preserve start class closing. 
+// ## Implementation preserve end class closing. 
+\end{lstlisting}
+\subsection{User}
+\lstset{language=Java}
+\begin{lstlisting}
+// ## Implementation preserve start class opening. 
+// ## Implementation preserve end class opening. 
+// ## Implementation preserve start class import. 
+// ## Implementation preserve end class import. 
+
+public class User
+// ## Implementation preserve start class extends. 
+// ## Implementation preserve end class extends. 
+
+// ## Implementation preserve start class inheritence. 
+// ## Implementation preserve end class inheritence. 
+
+{
+    /** Attributes */
+    public String userId;
+    public String password;
+    public Image photo;
+    public List<UserGroup> userGroups;
+    public String email;
+    public boolean admin = false;
+    // ## Implementation preserve start class attributes. 
+    // ## Implementation preserve end class attributes. 
+    // ## Implementation preserve start class associations. 
+    // ## Implementation preserve end class associations. 
+    // ## Implementation preserve start class other.operations. 
+    // ## Implementation preserve end class other.operations. 
+}
+
+// ## Implementation preserve start class closing. 
+// ## Implementation preserve end class closing. 
+\end{lstlisting}
+\subsection{UserAreaHandler}
+\lstset{language=Java}
+\begin{lstlisting}
+// ## Implementation preserve start class opening. 
+// ## Implementation preserve end class opening. 
+import UserHandler;
+// ## Implementation preserve start class import. 
+// ## Implementation preserve end class import. 
+
+public class UserAreaHandler extends UserHandler
+// ## Implementation preserve start class inheritence. 
+// ## Implementation preserve end class inheritence. 
+
+{
+    // ## Implementation preserve start class attributes. 
+    // ## Implementation preserve end class attributes. 
+    // ## Implementation preserve start class associations. 
+    // ## Implementation preserve end class associations. 
+    /**
+     * Operation
+     *
+     * @param req
+     * @param res
+     * @return 
+     */
+    public handle ( HttpServletRequest req, HttpServletResponse res )
+    {
+        // ## Implementation preserve start class method.handle@@@@HttpServletRequest@HttpServletResponse 
+        // ## Implementation preserve end class method.handle@@@@HttpServletRequest@HttpServletResponse 
+    }
+    /**
+     * Operation
+     *
+     * @param userId
+     * @param session
+     * @return 
+     */
+    public showUserArea ( String userId, HttpSession session )
+    {
+        // ## Implementation preserve start class method.showUserArea@@@@String@HttpSession 
+        // ## Implementation preserve end class method.showUserArea@@@@String@HttpSession 
+    }
+    /**
+     * Operation
+     *
+     * @param userId
+     * @param photo
+     * @return 
+     */
+    public addPhoto ( String userId, Image photo )
+    {
+        // ## Implementation preserve start class method.addPhoto@@@@String@Image 
+        // ## Implementation preserve end class method.addPhoto@@@@String@Image 
+    }
+    /**
+     * Operation
+     *
+     * @param groupId
+     * @param creatorId
+     * @return 
+     */
+    public createGroup ( String groupId, String creatorId )
+    {
+        // ## Implementation preserve start class method.createGroup@@@@String@String 
+        // ## Implementation preserve end class method.createGroup@@@@String@String 
+    }
+    /**
+     * Operation
+     *
+     * @param userId
+     * @param groupId
+     * @param inviteId
+     * @return 
+     */
+    public invite ( String userId, String groupId, String inviteId )
+    {
+        // ## Implementation preserve start class method.invite@@@@String@String@String 
+        // ## Implementation preserve end class method.invite@@@@String@String@String 
+    }
+    // ## Implementation preserve start class other.operations. 
+    // ## Implementation preserve end class other.operations. 
+}
+
+// ## Implementation preserve start class closing. 
+// ## Implementation preserve end class closing. 
+\end{lstlisting}
+\subsection{UserGroup}
+\lstset{language=Java}
+\begin{lstlisting}
+// ## Implementation preserve start class opening. 
+// ## Implementation preserve end class opening. 
+// ## Implementation preserve start class import. 
+// ## Implementation preserve end class import. 
+
+public class UserGroup
+// ## Implementation preserve start class extends. 
+// ## Implementation preserve end class extends. 
+
+// ## Implementation preserve start class inheritence. 
+// ## Implementation preserve end class inheritence. 
+
+{
+    /** Attributes */
+    public String[] userId;
+    public String groupId;
+    public String creatorId;
+    // ## Implementation preserve start class attributes. 
+    // ## Implementation preserve end class attributes. 
+    // ## Implementation preserve start class associations. 
+    // ## Implementation preserve end class associations. 
+    // ## Implementation preserve start class other.operations. 
+    // ## Implementation preserve end class other.operations. 
+}
+
+// ## Implementation preserve start class closing. 
+// ## Implementation preserve end class closing. 
+\end{lstlisting}
+\subsection{UserHandler}
+\lstset{language=Java}
+\begin{lstlisting}
+// ## Implementation preserve start class opening. 
+// ## Implementation preserve end class opening. 
+import UserManager;
+import ReqHandler;
+// ## Implementation preserve start class import. 
+// ## Implementation preserve end class import. 
+
+public class UserHandler
+// ## Implementation preserve start class extends. 
+// ## Implementation preserve end class extends. 
+ implements ReqHandler
+// ## Implementation preserve start class inheritence. 
+// ## Implementation preserve end class inheritence. 
+
+{
+    /** Attributes */
+    protected UserManager userManager;
+    // ## Implementation preserve start class attributes. 
+    // ## Implementation preserve end class attributes. 
+    // ## Implementation preserve start class other.operations. 
+    // ## Implementation preserve end class other.operations. 
+}
+
+// ## Implementation preserve start class closing. 
+// ## Implementation preserve end class closing. 
+\end{lstlisting}
+\subsection{UserManager}
+\lstset{language=Java}
+\begin{lstlisting}
+// ## Implementation preserve start class opening. 
+// ## Implementation preserve end class opening. 
+import UserManager;
+import DataAccessor;
+import User;
+// ## Implementation preserve start class import. 
+// ## Implementation preserve end class import. 
+
+public class UserManager
+// ## Implementation preserve start class extends. 
+// ## Implementation preserve end class extends. 
+
+// ## Implementation preserve start class inheritence. 
+// ## Implementation preserve end class inheritence. 
+
+{
+    /** Attributes */
+    private UserManager userManager;
+    protected DataAccessor dataAccessor;
+    // ## Implementation preserve start class attributes. 
+    // ## Implementation preserve end class attributes. 
+    // ## Implementation preserve start class associations. 
+    // ## Implementation preserve end class associations. 
+    /**
+     * Operation
+     *
+     * @return UserManager
+     */
+    public UserManager getInstance (  )
+    {
+        // ## Implementation preserve start class method.getInstance@UserManager@@ 
+        // ## Implementation preserve end class method.getInstance@UserManager@@ 
+    }
+    /**
+     * Operation
+     *
+     * @param userId
+     * @param password
+     * @return User
+     */
+    public User verify ( String userId, String password )
+    {
+        // ## Implementation preserve start class method.verify@User@@@String@String 
+        // ## Implementation preserve end class method.verify@User@@@String@String 
+    }
+    /**
+     * Operation
+     *
+     * @param userId
+     * @return User
+     */
+    public User load ( String userId )
+    {
+        // ## Implementation preserve start class method.load@User@@@String 
+        // ## Implementation preserve end class method.load@User@@@String 
+    }
+    /**
+     * Operation
+     *
+     * @param userId
+     * @param password
+     * @return 
+     */
+    public newU ( String userId, String password )
+    {
+        // ## Implementation preserve start class method.newU@@@@String@String 
+        // ## Implementation preserve end class method.newU@@@@String@String 
+    }
+    /**
+     * Operation
+     *
+     * @param groupId
+     * @param creatorId
+     * @return 
+     */
+    public newGroup ( String groupId, String creatorId )
+    {
+        // ## Implementation preserve start class method.newGroup@@@@String@String 
+        // ## Implementation preserve end class method.newGroup@@@@String@String 
+    }
+    /**
+     * Operation
+     *
+     * @param user
+     * @return 
+     */
+    public modify ( User user )
+    {
+        // ## Implementation preserve start class method.modify@@@@User 
+        // ## Implementation preserve end class method.modify@@@@User 
+    }
+    /**
+     * Operation
+     *
+     * @param userId
+     * @return 
+     */
+    public delete ( String userId )
+    {
+        // ## Implementation preserve start class method.delete@@@@String 
+        // ## Implementation preserve end class method.delete@@@@String 
+    }
+    /** Constructor *
+     * Operation
+     *
+     * @param 
+     * @return 
+     */
+    private UserManager (   )
+    {
+        // ## Implementation preserve start class method.UserManager@@@@ 
+        // ## Implementation preserve end class method.UserManager@@@@ 
+    }
+    // ## Implementation preserve start class other.operations. 
+    // ## Implementation preserve end class other.operations. 
+}
+
+// ## Implementation preserve start class closing. 
+// ## Implementation preserve end class closing. 
+\end{lstlisting}
 
 \end{document}
 
