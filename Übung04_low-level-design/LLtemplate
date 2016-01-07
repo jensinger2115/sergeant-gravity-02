@@ -1,9 +1,9 @@
 \documentclass{book}
 
-\usepackage[]{graphicx}
+\usepackage[pdftex]{graphicx}
 \usepackage[]{float}
-\usepackage{listings}
-\usepackage[]{hyperref} 
+\usepackage[pdftex]{listings}
+\usepackage[pdftex]{hyperref} 
 
 \title{Design Document}
 \author{Jens Henninger \and Daniel Maier \and Paul Fink \and Florian Jennewein}
@@ -30,12 +30,13 @@ Because the Client server isn't implemented in java, there's no need for us to i
 The main idea regarding our application is that all required tasks are handled with their own handler class, which is called through a specific request and handles it with the appropriate method. As you can see in the figure we grouped the handlers in data- and user-handlers and each handler is connected with the user-/datamanager which instances allow each handler to access the database(always via manager and via SPARQL). For example, the user section has classes and methods for user administration and the right system and the data section has classes for package management and. At the top of our application stands the required Rest interface and the HttpServlet. 
 \begin{figure}[H]
 \centering
-\includegraphics[width=16cm]{Diagrams/Classdia_total_h.png}
+\includegraphics[width=16cm]{Diagrams/Classdia_total.png}
 \caption{Whole Application}
 \label{Fig. 1}
 \end{figure}
 \section{Detail View}
 \subsection{The Main Servlet}
+The head section contains four components. The "MainServlet" is the main part and the brain of the operation. Any request goes through here and is then send to the correct processing station. The three methods "doGet", "doPost" and "doDelete" initiate/handle a Http get-, post- and delete-request, which are not processed here but either by the "HttpServlet" or the "RestHandler". The "HttpServlet" handles regular Http-request, while the "RestHandler" handles request initiated through the REST interface. The three remaining methods of the "MainServlet" work with our "ReqHandler" Interface. These handler handle the actual request, for example logging out a user. For each interaction with our application exists one of these handlers, which have one main function, which is to "handle" their specific request. The MainServlet has three methods to work with that interface. First "addReqHandler" which adds a new "ReqHandler", secondly "removeRegHandler", which removes an existing "ReqHandler" and lastly removeAll(), which removes all existing "ReqHandlers".
 \begin{figure}[H]
 \centering
 \includegraphics[width=16cm]{Diagrams/HeadSect.png}
@@ -49,42 +50,62 @@ The main idea regarding our application is that all required tasks are handled w
 \caption{User Section}
 \label{Fig. 3}
 \end{figure}
-\begin{figure}[H]
-\centering
-\includegraphics[width=16cm]{Diagrams/U1.png}
-\caption{Group Creation}
-\label{Fig. 4}
-\end{figure}
+In this section we want to zoom in the user part. As already mentioned there are specific classes for every user request. In the diagram you can see that we offer classes for registration, login, logout, for delete or search users and a user area. All the specific handler classes are derived from the class UserHandler.\\
+The class RegistrationHandler offers in addition to the handle method for communicating with the HttpServlet the method register, which takes an E-Mail adress, a userId and a password. Later we discuss the user registration within a sequence diagram in detail. The login will be handled by the LoginHandler class. The method login checks via the UserManager and the DataAccessor wether the transferred parameters userId and password are correct. The LogoutHandler class ensures, that after the logout request all data of the actual session are stored in the database.\\
+In comparision with the RegistrationHandler the DeleteUserHandler deals with the opposite action. The cancellation will be initiated by the method call delete. After verifiing the correctness of the parameters userId and password the user will be deleted via the method calls delete of the UserManager and deleteU of the DataAccessor.\\
+Another usefull class is the UserSearchClass which make sure that User can be searched by their UserId to load specific data. The last handler class is the UserAreaHandler. Within this class the user can chance their user profile after calling the showUserArea method or can upload a photo by the addPhoto method. In addition to that the class offers the function createGroup and invite to manage the groups of an user.\\
+For more modularity, seperation and reusability all handler classes uses the methods of the UserManager class and to handle the direct accesses to the database the DataAccessor class is used before, which is the only class who can interact with the database directly.\\As we can see most of the handler classes are nearly used in the same way. Now we want to have a closer look on the user registration via the following sequence diagram as an example how the classes are used and interact together.\\
 \begin{figure}[H]
 \centering
 \includegraphics[width=16cm]{Diagrams/U2.png}
 \caption{Use of an Algorithm}
 \label{Fig. 5}
 \end{figure}
+When the user sends a request via browser the client communicates within a serverCall with the server. The class MainServlet process the request of the client and call the handle method from the RegistrationHandler class within the HtmlServletRequest and HtmlServletResponse parameters. To register the user the parameters email, userId and password are needed. For a successful registration the method newU from the UserManager is called to create a new User. The DataAccessor is the only one who can interact directly with the database, so as a proxy this class saves the new User date by calling the method saveU. After a successful registration a serverResponse is given back to the client.\\
+As another example we show the creation of a group.
+\begin{figure}[H]
+\centering
+\includegraphics[width=16cm]{Diagrams/U1.png}
+\caption{Group Creation}
+\label{Fig. 4}
+\end{figure}
+The process to create a group uses the same main principle as in the example before. The difference is that we have to use the method createGroup of the UserAreaHandler class and the methods newGroup of the UserManager class and saveGroup of the DataAccessor. These examples emphasize the benefits of the used whole part and proxy patterns.
 \subsection{The Data Section}
 \begin{figure}[H]
 \centering
 \includegraphics[width=16cm]{Diagrams/DataSect.png}
-\caption{Download Data}
+\caption{Data Section}
 \label{Fig. 6}
 \end{figure}
+In the Data section we have different handler classes like download, delete, upload (and thats exactly what they're used for) and algorithm which all extends the DataHandler class, and which itself implements the RequestHandler interface.
+When MainServlet calls a specific handler with a request, the handler processes the request via the Datamanager instance. The Datamanage itself communicates with the DataAccessor, which is the only class with the access to the database.
+The DataAccessor is able to get packets (see below) from the specific user and data ID's , delete and save packets. It is  also able to save a user or a group, and also to delete a group, or get a user name from a specific userID.
+An other important part is the AlgorithmHandler class. It provides methods for execute an choosen algorithm on a specific dataset, also it is able to create a NewAlgorithm class when user wants to via Factory Method.\\
+A packet class provides methods and attributes to create new packets , wich hold strings with owner and groupt ID's , and also arrays with models , datasets and testdata. They also hold information about the permission of a package.
+Packets will be stored in the database and will be loaded depends on a called handler.
+The last part is a converter class. Its main function is to convert the result to a useful format for downloading. It's also possible to create new possible formats later through Factory Method. 
 \begin{figure}[H]
 \centering
 \includegraphics[width=16cm]{Diagrams/D1.png}
-\caption{User surface zoom}
+\caption{Use of Algorithm}
 \label{Fig. 7}
 \end{figure}
+In the first sequence the Mainservlet receives a request from the client to use an algorithm on specific data, so the MainServlet calls the required AlgorithmHandler. To get the Data the AlgorithmHandler uses the "load" method of the Datamanager, which calls the DataAccessor, then DataAccessor method gets the packet from the database.
+The packet takes the opposite way and goes through DataManager, wich returns the required dataSet to the AlgorithmHandler. Then AlgorithmHandler class calls "do algorithm" method on the dataSet, and sends the Response back to the MainServlet.
 \begin{figure}[H]
 \centering
 \includegraphics[width=16cm]{Diagrams/D2.png}
-\caption{User surface zoom}
+\caption{Download Data}
 \label{Fig. 8}
 \end{figure}
+In this sequence diagram, is a download sequence shown. The Mainservlet gets a request from the client and calls the required DownloadHandler. For loading the packet to download 
+the DownloadHandler calls the DataManager, which receives a packet via DataAccessor, and returns the data to the DownloadHandler. Now DownloadHandler has possibilities to give the data to the converter for converting or to provide it directly for downloading via backtransfer to the MainServlet.
+For conversion a Converter class is being called, which also returns a converted data.
 \section{Used Patterns}
-For our application, we used the following patterns:
-\textbf{Whole-Part: } This pattern is very important to guarantee the required modularity, reusability and a clear seperation through the use of classes, which aggregate particular objects/services. The most obvious example for this pattern is the relationship between the MainServlet and handler classes.\n
-:\textbf{Proxy: }This pattern is used for more seperation and reusability regarding the database, through our DataAccessor class, our proxy class which is the only class which is able to interact with the database.\n
-\textbf{Singleton: } This pattern is for some kind of stability and safety because it prevents that there's more than one instance of a specific class, which is only needed once for example are the manager classes.
+For our application, we used the following patterns:\\
+\textbf{Whole-Part: } This pattern is very important to guarantee the required modularity, reusability and a clear seperation through the use of classes, which aggregate particular objects/services. The most obvious example for this pattern is the relationship between the MainServlet and handler classes.\\
+\textbf{Proxy: }This pattern is used for more seperation and reusability regarding the database, through our DataAccessor class, our proxy class which is the only class which is able to interact with the database.\\
+\textbf{Singleton: } This pattern is for some kind of stability and safety because it prevents that there's more than one instance of a specific class, which is only needed once for example are the manager classes.\\
 \textbf{Factory Method: } To make the plug-in of new result formats and algorithms possible, we use this pattern in the algorithm handler and the converter. 
 \section{Resulting Source Code}
 \subsection{AlgorithmHandler}
