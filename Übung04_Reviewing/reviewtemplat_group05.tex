@@ -10,7 +10,34 @@
 
 \section{Introduction}
 This is our review of the Low-Level-Design document of Group 19. 
- 
+\section{Positive points}
+\subsection{1.Structure}
+The reviewed Low-Level-Design-Document has a very good structure and organization, which make it easy to get a clear view over the whole concept. 
+\subsection{2.Concept}
+The whole concept of the application is recognizable and has a clear structure.
+\subsection{3.Descreption in general}
+The "Verwaltung" and the "rechnende Komponente" are described in a detailed way and their description is understandable.
+\subsection{4.Class-description} 
+The seperately and organized descriptions of the classes is a main positive point regarding the overview of the document!
+\section{Negative points}
+\subsection{1.Concept regarding points}
+\subsubsection{Lack of Modularity}
+The whole application isn't very modular, which was an important requirement. That means especially the "Verwaltung[en]", which bunches lots of methods for most differntly tasks. That could be a problem regarding later changes of the application. An alternative way could be to split the tasks to specific classes, which implements the same basic interface.
+\subsubsection{Databases}
+Maybe we don't get it, but it seems that the application uses two different databases for user and data. We think that this makes the application more difficult as it could be if there's only one database. By the way this is there's higher maintenance.
+\subsection{2.Mistakes}
+\subsubsection{The RDF-Database}
+In your description the RDF-Database is mentioned as the data database, but there isn't any RDF-Database in the diagrams.
+\subsubsection{Proxy}
+The use of the Proxy-pattern is wrong/redundant, because in your diagram is shown, that although a Proxy class exists, the original class communicates with the database instead of the proxy class.
+\subsubsection{Sequence diagrams}
+There are some Syntax-mistakes in the sequence-diagrams like live bars, which are too long with arrows passing through them. By the way there not sorted very well(especially the annotations).
+\subsection{3.Missing}
+\subsubsection{Output formats}
+There are no different/choosable/extensible output formats for downloading the results, although it is required.
+\subsection{4.Other matters}
+\subsubsection{Sequence diagrams}
+There are only two sequence diagrams, which is too sparesly in our opinion.
 \end{document}
 
 %%% Local Variables:
