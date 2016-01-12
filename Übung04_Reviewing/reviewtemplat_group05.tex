@@ -11,37 +11,35 @@
 \section{Introduction}
 This is our review of the Low-Level-Design document of Group 19. 
 \section{Positive points}
-\subsection{1.Structure}
+\subsection{Structure}
 The reviewed Low-Level-Design-Document has a very good structure and organization, which make it easy to get a clear view over the whole concept. 
-\subsection{2.Concept}
+\subsection{Concept}
 The whole concept of the application is recognizable and has a clear structure.
 The technical environment is clearly mentioned.
-\subsection{3.Description in general}
+\subsection{Description in general}
 The "Verwaltung" and the "rechnende Komponente" are described in a detailed way and their description is understandable.
-\subsection{4.Class-description} 
+\subsection{Class-description} 
 The seperately and organized descriptions of the classes is a main positive point regarding the overview of the document!
 \section{Negative points}
-\subsection{1.Concept regarding points}
+\subsection{Concept regarding points}
 \subsubsection{Lack of Modularity}
 The whole application isn't very modular, which was an important requirement. That means especially the "Verwaltung[en]", which bunches lots of methods for most differntly tasks. That could be a problem regarding later changes of the application. An alternative way could be to split the tasks to specific classes, which implements the same basic interface.
 \subsubsection{Databases}
 Maybe we don't get it, but it seems that the application uses two different databases for user and data. We think that this makes the application more difficult as it could be if there's only one database. By the way this is there's higher maintenance.
-\subsection{2.Mistakes}
+\subsection{Mistakes}
 \subsubsection{Proxy}
 The use of the Proxy-pattern is wrong/redundant, because in your diagram is shown, that although a Proxy class exists, the original class communicates with the database instead of the proxy class.
-\subsubsection{Sequence diagrams}
- not sorted very well(especially the annotations).
-\subsection{3.Missing}
+\subsection{Missing}
 \subsubsection{Output formats}
 There are no different/choosable/extensible output formats for downloading the results, although it is required.
 \subsection{WEKA}
-There's no connection to the WEKA library (through WEKA, the Algorithm classes are redundant)
+There's no connection to the WEKA library (through WEKA, the Algorithm classes are redundant).
 \subsubsection{Sequence diagrams}
 There's no description for your sequence diagrams.
-\subsection{4.Other matters}
+\subsection{Other matters}
 \subsubsection{Sequence diagrams}
-There are only two sequence diagrams, what's too sparesly in our opinion.
-in addition, the diagrams are not neat(especially the annotations and crooked arrows).
+There are only two sequence diagrams, what's too sparesly in our opinion.\\\\
+In addition to this, the diagrams are not neat(especially the annotations and crooked arrows).
 \subsubsection{Unused Patterns}
 Not really a negative point, but the unused patterns were not required.
 \end{document}
